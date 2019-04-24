@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+<title>BF - Projekte</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kadwa|Titillium+Web" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kadwa", sans-serif;}
+.w3-myfont {font-family: "Titillium Web", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./Bilder/Head_BG.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./Bilder/service.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./Bilder/agency.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image (Projekt) */
+.bgimg-4 {
+  background-image: url("./Bilder/Leistung_03.jpg");
+  min-height: 400px;
+}	
+
+/* Fifth image (Projekt) */
+.bgimg-5 {
+  background-image: url("./Bilder/Icons/BFMAPpositiv.svg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}	
+
+/* Sixth image (Projekt) */
+.bgimg-6 {
+  background-image: url("./Bilder/Nuii.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Seventh image (Projekt) */
+.bgimg-7 {
+  background-image: url("./Bilder/Durchstarter.jpg");
+  max-height: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+	
+/* Aighth image (BF-Map) */
+.bgimg-8 {
+  background-image: url("./Bilder/Froneri.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-9 {
+  background-image: url("./Bilder/Hessen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-10 {
+  background-image: url("./Bilder/Instand.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Aighth image (BF-Map) */
+.bgimg-11 {
+  background-image: url("./Bilder/Maggi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Aighth image (BF-Map) */
+.bgimg-12 {
+  background-image: url("./Bilder/Roche.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Aighth image (BF-Map) */
+.bgimg-13 {
+  background-image: url("./Bilder/DrOetkker.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+	
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.mySlides {display:none}	
+.w3-theme {color:#fff !important;background-color:#333333 !important}
+	
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}	
+</style>
+	
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-battery-full"></i> LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-door-open"></i> JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-comments"></i> BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <img src="./Bilder/logoInvert.png" class="w3-small" alt="BRAND FACTORY" style="width:100%;max-width:160px">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+  </div>
+</div>
+
+	
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-bottomleft w3-padding" style="white-space:nowrap;">
+    <span class="w3-center w3-padding w3-xxxlarge w3-white w3-animate-opacity">Aktuelle</span>
+	  <p style="padding: 0px 0px 1px 0px"></p>
+	<span class="w3-center w3-padding w3-white w3-xxxlarge w3-animate-opacity">Projekte</span>
+	  <p ></p>
+  </div>
+</div>
+	
+<!-- Zweite Zeile: Headline & Einleitung -->
+<div class="w3-row w3-black w3-padding-64 w3-container" id="projekte">
+	<h1 class="w3-center w3-black w3-xxxlarge">Aktuelle Projekte</h1>
+ 	<p class="w3-content w3-myfont w3-xlarge">Seit über 20 Jahren haben wir für über 100 Konzerne und führende Markenartikler Kampagnen und Ideen entwickelt um für Wachstum und mehr Aufmerksamkeit zu sorgen.
+	</p>
+</div>	
+	
+<!-- First Grid: Projekte -->
+<div class="w3-row">
+	
+  <div class="bgimg-6 w3-half w3-display-container w3-hover-opacity" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Neue</span>
+		<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Eismarke</span>
+	  <p></p>
+		<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Nuii</span>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Launch</span> <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Kampagne</span>
+	  
+    </div>
+  </div>
+	
+  <div class="bgimg-7 w3-half w3-display-container w3-hover-opacity" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">IHK</span>
+		<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">DURCHSTARTER</span><p></p>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Image</span> <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Kampagne</span>
+		<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">2019</span>
+    </div>
+  </div>
+	
+</div>
+
+<!-- Second Grid: Projekte -->
+<div class="w3-row">
+	
+  <div class="bgimg-8 w3-half w3-display-container w3-hover-opacity" onclick="openModal();currentDiv(1)" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Froneri</span><p></p>
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Das</span>
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Highlight</span>
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Verkaufsmagazin</span>
+    </div>
+  </div>
+	
+  <div class="bgimg-9 w3-half w3-display-container w3-hover-opacity" onclick="openModal();currentDiv(2)" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Hessisches</span>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Ministerium</span><p></p>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">für</span> 
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Soziales</span>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">und</span>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Integration</span>
+    </div>
+  </div>
+	
+</div>	
+	
+<!-- Third Grid: Projekte -->
+<div class="w3-row">
+	
+  <div class="bgimg-10 w3-half w3-display-container w3-hover-opacity" onclick="openModal();currentDiv(3)" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Instand</span><p></p>
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Markenauftritt</span>
+    </div>
+  </div>
+	
+  <div class="bgimg-11 w3-half w3-display-container w3-hover-opacity" onclick="openModal();currentDiv(4)" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Maggi</span>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Ideen</span><p></p>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">vom</span> 
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Wochenmarkt</span>
+    </div>
+  </div>
+	
+</div>		
+	
+<!-- Fourth Grid: Projekte -->
+<div class="w3-row">
+	
+  <div class="bgimg-12 w3-half w3-display-container w3-hover-opacity" onclick="openModal();currentDiv(5)" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Roche</span><p></p>
+	<span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Laborsysteme</span>
+    </div>
+  </div>
+	
+  <div class="bgimg-13 w3-half w3-display-container w3-hover-opacity" onclick="openModal();currentDiv(6)" style="height:650px">
+    <div class="w3-padding-64 w3-content w3-display-bottomleft" style="padding:30px">
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Dr.</span>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Oetker</span><p></p>
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">Frische</span> 
+	  <span class="w3-xxlarge w3-light-grey" style="padding:0px 15px 0px 15px">News</span>
+    </div>
+  </div>
+	
+</div>		
+		
+<!-- Modal for full size images on click-->
+<div class="w3-container">
+
+<!-- MODAL -->	
+	
+<div id="myModal" class="w3-modal w3-black">
+	
+ <span class="w3-text-white w3-jumbo w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">&times;</span>
+	
+<!-- MODAL INHALT -->	
+ <div class="w3-modal-content">
+
+ <div class="w3-content" style="max-width:1200px">
+	 
+	<div class="w3-row w3-black w3-center">	  
+		<div class="w3-col s2">
+     		<img class="demo w3-opacity w3-hover-opacity-off" src="./Bilder/Froneri.jpg" style="width:100%" onclick="currentDiv(1)" alt="Froneri">
+   		 </div>
+		<div class="w3-col s2">
+     		<img class="demo w3-opacity w3-hover-opacity-off" src="./Bilder/Hessen.jpg" style="width:100%" onclick="currentDiv(2)" alt="Hessen">
+		</div>
+		<div class="w3-col s2">
+			<img class="demo w3-opacity w3-hover-opacity-off" src="./Bilder/Instand.jpg" style="width:100%" onclick="currentDiv(3)" alt="INSTAND">
+		</div>
+		<div class="w3-col s2">
+     		<img class="demo w3-opacity w3-hover-opacity-off" src="./Bilder/Maggi.jpg" style="width:100%" onclick="currentDiv(4)" alt="Maggi">
+   		 </div>
+		<div class="w3-col s2">
+     		<img class="demo w3-opacity w3-hover-opacity-off" src="./Bilder/Roche.jpg" style="width:100%" onclick="currentDiv(5)" alt="Roche">
+		</div>
+		<div class="w3-col s2">
+			<img class="demo w3-opacity w3-hover-opacity-off" src="./Bilder/DrOetkker.jpg" style="width:100%" onclick="currentDiv(6)" alt="Dr. Oetker">
+		</div>
+	</div>
+	 
+	<div class="w3-display-container w3-black">
+		<div class="w3-row w3-black w3-center">
+		<p id="caption"></p>
+     	<span class="w3-display-left w3-btn" onclick="plusDivs(-1)"><i class="fas fa-angle-left" style="font-size:36px"></i></span>
+     	<span class="w3-display-right w3-btn" onclick="plusDivs(1)"><i class="fas fa-angle-right" style="font-size:36px"></i></span>
+		</div>
+	</div>
+
+<!-- INHALT PROJEKT FRONERI -->	 
+	 
+<div class="w3-display-container w3-white">	 
+	
+	<div class="mySlides">
+	<div class="w3-display-topleft" style="padding:390px 0px 10px 20px">
+ 	 	<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Froneri</span><br> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Das</span>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Highlight</span><br> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Verkaufsmagazin</span>
+		
+		<span class="w3-large w3-hide-medium w3-hide-large w3-light-grey" style="padding:0px 15px 0px 15px">Froneri</span><br>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-light-grey" style="padding:0px 15px 0px 15px">Das</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-light-grey" style="padding:0px 15px 0px 15px">Highlight</span><br> 
+		<span class="w3-large w3-hide-medium w3-hide-large w3-light-grey" style="padding:0px 15px 0px 15px">Verkaufsmagazin</span>
+
+	</div>
+	
+		<img src="./Bilder/Froneri.jpg" style="width:100%">
+
+<div class="w3-row w3-padding-32 w3-theme">
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<i class="w3-large w3-myfont">Froneri beliefert die gesamte Gastronomie mit den bekannten Eismarken Mövenpick, Schöller und Schöller Backwaren und gehört damit zu den Big Playern im Markt. Die OOH Verkaufsbroschüre als Umsatzgenerator sollte ein moderneres Design, eine neue Struktur und eine höhere Relevanz für die knapp&nbsp; <span class="w3-tag w3-light-grey">40.000 Kunden</span> erhalten.</i>
+	</div>
+	<div class="w3-col l6 w3-center" style="padding:100px 50px 0px 50px">
+		<img src="./Bilder/FroneriLogo.png" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>	
+	
+</div>	  
+
+<div class="w3-row w3-padding-32">
+	<div class="w3-col l6 w3-padding-32">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:10px 0px 0px 30px">Aus Broschüre <br>wird Magazin</h3>
+	</div>	
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<p class="w3-large w3-myfont">Es wurde jeder Buchstabe, jedes Bild und jede Farbe umgedreht. Aus einer tradierten Broschüre entstand ein modernes Verkaufsmagazin mit dem Namen Highlight, das neben spannenden Angeboten auch Tipps und Aktuelles aus der Branche für die Gastronomie jeden Monat bereithält.</p>
+	</div>
+	
+</div>	  		
+	
+<div class="w3-row w3-padding-32 w3-light-gray">
+	<div class="w3-col l4 w3-padding-large w3-center">
+		<img src="./Bilder/Froneri_Mai.jpg" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>	
+	<div class="w3-col l4 w3-padding-large w3-center">
+		<img src="./Bilder/Froneri_Juni.jpg" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>
+	<div class="w3-col l4 w3-padding-large w3-center">
+		<img src="./Bilder/Froneri_April.jpg" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>
+</div>		
+		
+<div class="w3-row">
+	<div class="w3-col l6" style="padding:50px 15px 0px 15px">
+		<img src="./Bilder/Stoerer.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+	<div class="w3-col l6">
+		<div class="w3-display-right" style="padding:0px 230px 130px 0px">
+ 	 	<span class="w3-xlarge w3-hide-small w3-white w3-text-blue w3-myfont" style="padding:15px 30px 15px 35px">EIS  &amp; DESSERTS</span><br> 
+	</div>
+		<img src="./Bilder/Punkteraster.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>	  
+	
+<div class="w3-row">
+	<div class="w3-col l6 w3-padding-16">
+	<img src="./Bilder/Farbwelt.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+	<div class="w3-col l6 w3-light-gray">
+		<h3 class="w3-text-black" style="padding:15px 15px 15px 15px">Durch ein optimiertes Farbsystem, einer klareren Struktur und mehr relevantem Content schaffte der neue Auftritt mehr spannendes Lesevergnügen.</h3>
+	</div>
+	
+</div>
+
+<div class="w3-row">
+
+	<div class="w3-col l6" style="padding:0px 15px 15px 15px">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:0px 15px 0px 15px">Ein Highlight<br>im Verkaufen</h3>
+		<p class="w3-text-black w3-padding w3-myfont">Das kann sich im wahrsten Sinne sehen lassen. Der Umsatz konnte im ersten Jahr über das gesamte Sortiment gesteigert werden. Die neuen Produkte fanden höheren Absatz und die Bestellquantität steigerte sich im unteren zweistelligen Bereich.</p>
+	</div>
+	
+	<div class="w3-col l6">
+		<img src="./Bilder/Froneri_hefte.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+</div>	  
+
+<div class="w3-row">
+<img src="./Bilder/Froneri_cover.jpg" class="w3-image" alt="Menu">	
+</div>
+		
+<div class="w3-row">
+	
+<div class="w3-row w3-padding-32 w3-myfont">
+
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-text-grey w3-center w3-myfont">KUNDE</h4>
+		<img src="./Bilder/Froneri_Logo_black.png" class="w3-padding w3-round w3-image" alt="Menu" style="width:50%">
+      <p class="w3-text-black w3-center w3-padding">FRONERI SCHÖLLER GmbH</p>
+	</div>
+	
+	<div class="w3-col l4  w3-padding">
+		<h4 class=" w3-text-grey w3-myfont w3-center">LEISTUNGEN</h4>
+      <ul class="w3-text-black w3-left-align">
+		<li>Corporate Design inkl. Ikonisierungen</li>
+		  <li>Schaffung einer modernen Magazin-Struktur</li>
+		  <li>Namensentwicklung</li>
+		  <li>Konzeption von Abverkaufsmechaniken</li>
+		  <li>Monatliche, redaktionelle Begleitung</li>
+		</ul>
+	</div>
+	
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class=" w3-text-grey w3-myfont w3-center">ANSPRECHPARTNER</h4>
+		<img src="./Bilder/joana.jpg" class="w3-circle w3-image w3-opacity-min" alt="Menu" style="width:30%">
+		<p class="w3-text-black"><h3>Constanze</h3>Client Service Director<br>069 90 74 96 - 40</p>
+	</div>	
+	
+</div>	
+	  
+<div class="w3-row w3-theme">
+	<div class="w3-col l12 w3-padding-32">
+      <p class="w3-xxlarge w3-center w3-text-white w3-padding-large">Highlight – ein Magazin, das verkauft.</p>
+	</div>	
+</div>	
+
+</div>
+</div>
+
+	
+<!-- INHALT PROJEKT HESSEN -->	
+	
+<div class="mySlides">	
+	<div class="w3-display-topleft" style="padding:270px 0px 0px 20px">
+ 	 	<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Hessisches</span><p></p>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Ministerium</span><p></p>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">f&uuml;r</span> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Soziales</span>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">und</span><p></p>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Integration</span>
+		
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Hessisches</span><br>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Ministerium</span><br>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">für</span> 
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Soziales</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">und</span><br>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Integration</span>
+	</div>
+
+<img src="./Bilder/Hessen.jpg" style="width:100%">
+	
+<div class="w3-row w3-padding-32 w3-theme">
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<i class="w3-large w3-myfont">2016 startete die Hessische Landesregierung die Öffentlichkeitskampagne „Inklusion (er)leben“. Mit dem Ziel, Menschen mit und ohne Behinderung in Kontakt zu bringen und damit bestehende Barrieren in den Köpfen abzubauen, fanden im Rahmen dieser Kampagne Veranstaltungen als Begegnungsstätten statt. Zum Abschluss sollte das gesellschaftlich hochrelevante Thema in die Mitte der Gesellschaft gerückt werden: mit einem großen&nbsp;<span class="w3-tag w3-light-grey">Inklusionsfest</span> im Herzen der Landeshauptstadt.</i>
+	</div>
+	<div class="w3-col l6 w3-center" style="padding:80px 64px 0px 64px">
+		<img src="./Bilder/HessenLogo.png" class="w3-round w3-image" alt="Menu" style="width:40%">
+	</div>	
+	
+</div>	  
+	  	  
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/inklusion.png" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+	<div class="w3-col l6 w3-padding-large">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:80px 0px 0px 0px">Menschlichkeit begegnen!</h3>
+	  <p class="w3-large w3-text-black w3-myfont">
+	  Die Idee war eine Lebendigkeit mitten in die Hauptstadt Hessens zu bringen. Daher haben wir Künstler mit und ohne Handicap, die ganze Stadt und Umland sowie Steakholder zu einem bunten Fest der Vielfalt eingeladen. Unter dem gleichnamigen Motto Inklusion (er)leben fand ein spannender Tag der Diversität auf dem Wiesbadener Schlossplatz statt.</p>
+	</div>
+	
+</div>	  
+	
+<div class="w3-row">
+	<div class="w3-col l6 w3-padding-large">
+	<h3 class="w3-text-black w3-xxlarge">Über 4.000 <br>Besucher haben gefeiert</h3>
+      <p class="w3-large  w3-text-black w3-myfont">Über 100 Showakte wurden von über 4.000 Besuchern beklatscht. 20 Aussteller sorgten für spannende Informationen und das leibliche Wohl. Einschließlich Minister waren alle mehr als zufrieden.</p>
+	</div>
+	
+	<div class="w3-col l6">
+		<img src="./Bilder/basketball.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+</div>
+
+<div class="w3-row">
+
+	<div class="w3-col l6">
+		<img src="./Bilder/bus.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+	<div class="w3-col l6">
+		<img src="./Bilder/erleben.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+	
+</div>	  
+	  
+<div class="w3-row">
+	
+	<div class="w3-row w3-padding-32">
+      <p class="w3-xlarge  w3-text-grey" style="padding:0px 32px 0px 32px">Dieses Fest war ein Beispiel für gelungene Integration und Inklusion. Das Miteinander ist immer stärker als das Gegeneinander. <br>Ein Vorbild für andere.</p>
+		<p class="w3-text-grey w3-right-align" style="padding:0px 48px 0px 32px">Referatsleiter Winfried Kron</p>
+	</div>
+
+<div class="w3-row w3-padding-32 w3-myfont">
+
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-text-grey w3-center w3-myfont">KUNDE</h4>
+		<img src="./Bilder/HessenLogo.png" class="w3-padding w3-round w3-image" alt="Menu" style="width:30%">
+      <p class="w3-text-black w3-center">Hessisches Ministerium<br> für Soziales und Integration</p>
+	</div>
+	
+	
+	
+	<div class="w3-col l4 w3-center w3-padding">
+		<h4 class="w3-center w3-text-grey w3-myfont">LEISTUNGEN</h4>
+      <ul class="w3-text-black w3-left-align">
+		<li>Konzeption der Kampagne und Schlussevent</li>
+		  <li>Organisation der Veranstaltung inkl. Rekrutierung der Aussteller</li>
+		  <li>Gestaltung Werbematerialien</li>
+		  <li>Technische Überwachung</li>
+		  <li>Regie des Programmes</li>
+		</ul>
+	</div>
+	
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-center w3-text-gray w3-center w3-myfont">ANSPRECHPARTNER</h4>
+		<img src="./Bilder/joana.jpg" class="w3-circle w3-image w3-opacity-min" alt="Menu" style="width:30%">
+		<p class="w3-text-black"><h3>Joanna</h3>GF BRAND connect <br>069 90 74 96 - 13</p>
+	</div>	
+	
+</div>	
+	  
+<div class="w3-row w3-theme">
+	<div class="w3-col l12 w3-padding-32">
+      <p class="w3-xxlarge w3-center w3-text-white w3-padding-large">BRAND connect – Wir verbinden Menschen.</p>
+	</div>	
+</div>	
+
+</div>
+</div>
+	
+	
+<!-- INHALT PROJEKT INSTAND -->		
+<div class="mySlides">
+	<div class="w3-display-topleft" style="padding:430px 0px 0px 20px">
+ 	 	<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">INSTAND</span><p></p> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Markenauftritt</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">INSTAND</span><p></p> 
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Markenauftritt</span>
+	</div>
+	
+   <img src="./Bilder/Instand.jpg" style="width:100%">
+
+<div class="w3-row w3-padding-32 w3-theme">
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<i class="w3-large w3-myfont">Als interdisziplinäre Fachgesellschaft im wissenschaftlich-medizinischen Sektor im Bereich der Laboratoriumsdiagnostik die Qualitätssicherung. Um national und international einen modernen, einheitlichen Auftritt zu gewährleisten wurde die Marke &nbsp;<span class="w3-tag w3-light-grey">INSTAND e.V.</span>  einem breiten Relaunch unterzogen.</i>
+	</div>
+	<div class="w3-col l6 w3-center" style="padding:80px 0px 0px 0px">
+		<img src="./Bilder/Instand/Instand_Logo_gray.png" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>	
+</div>	  
+
+<div class="w3-row w3-padding-16">
+	<div class="w3-col l6" style="padding: 40px 0px 0px 10px">
+		<img src="./Bilder/Instand/Instand_Logo.jpg" class="w3-round w3-image" alt="Menu" style="width:90%">
+	</div>
+	<div class="w3-col l6 w3-center">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:40px 0px 0px 0px">Eine Marke<br> für die<br> Zukunft.</h3>
+	</div>	
+</div>	  		
+	
+<div class="w3-row" style="padding: 40px 0px 0px 10px">
+	<img src="./Bilder/Instand/INSTAND_Katalog.png" class="w3-round w3-image" alt="Menu" style="width:100%">
+</div>		
+		
+<div class="w3-row">
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:30px 15px 15px 30px">Konzept</h3>
+		<p class="w3-text-black w3-myfont" style="padding:0px 15px 0px 30px">Nach eingehender Markanalyse wurden in drei Schritten die Marke konzipiert. Im ersten Schritt wurden in Strategie- und Markenworkshops die Markenpersönli chkeit und die Positionierung entwickelt.<br>Die Diagnose – Die Zuverlässigkeit von Laboranalysen ist die Grundlage für eine optimale Patientenversorgung.</p>
+	</div>
+	<div class="w3-col l6 w3-padding-large">
+		<img src="./Bilder/Instand/Instand_Manual.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>	
+</div>
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/Instand/INSTAND_cards.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6" style="padding:15px 15px 15px 15px">
+		<p class="w3-text-black w3-padding w3-myfont">Entsprechend der optimierten Positionierung ist das Logo, das Corporate Design im zweiten Schritt redesigned worden, um sich dann sich im neuen Internetauftritt wiederzufinden. Im dritten step entwarfen und produzierten wir neue Kommunikations- und Werbemittel. Das umfasste ein Unternehmensbroschüre, Anzeigen in Fachmagazinen und Dialogmaßnahmen bis hin zum Messeauftritt und der Digitalisierung des Katalogwesens.</p>
+	</div>
+</div>	  
+
+<div class="w3-row">
+<img src="./Bilder/Instand/Instand_map.png" class="w3-image" alt="Menu">	
+</div>
+	
+<div class="w3-row">
+	<div class="w3-col l6" style="padding:0px 15px 0px 15px">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:0px 15px 0px 15px">Das kann sich<br> sehen lassen</h3>
+		<p class="w3-text-black w3-padding w3-myfont">Erfolgreiche Ausrichtung der gesamten Kommunikation auf Grundlage der entwickelten Kernbotschaft „Excellence in Quality“. Effizientere Prozesse durch neuen Internetauftritt und Digitalisierung des Katalog- und Bestellwesen.</p>
+	</div>
+	<div class="w3-col l6">
+		<img src="./Bilder/Instand/INSTAND-4.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>		
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/Instand/INSTAND_Flyer.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6">
+		<img src="./Bilder/Instand/image004.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>	
+		
+<div class="w3-row">
+	
+<div class="w3-row w3-padding-32 w3-myfont">
+
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-text-grey w3-center w3-myfont">KUNDE</h4>
+		<img src="./Bilder/Instand/Instand_Logo_black.png" class="w3-padding w3-round w3-image w3-center" alt="Menu" style="width:70%">
+		<p class="w3-text-black w3-left-align w3-padding w3-center">INSTAND<br>Gesellschaft zur Förderung<br> der Qualitätssicherung<br> in medizinischen Laboratorien e.V.</p>
+	</div>
+	
+	
+	
+	<div class="w3-col l4 w3-center w3-padding">
+		<h4 class="w3-center w3-text-grey w3-myfont">LEISTUNGEN</h4>
+      <ul class="w3-text-black w3-left-align">
+		<li>Strategische Beratung</li>
+		  <li>Markenworkshop / Positionierung</li>
+		  <li>Corporate Design inkl. Logo</li>
+		  <li>Internetauftritt und Digitalisierung Katalog- und Bestellwesen</li>
+		  <li>Umsetzung Kommunikationsund Werbemittel</li>
+		  <li>Messeauftritt</li>
+		</ul>
+	</div>
+	
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-center w3-text-grey w3-center w3-myfont">ANSPRECHPARTNER</h4>
+		<img src="./Bilder/Instand/Boris.jpg" class="w3-circle w3-image w3-opacity-min" alt="Menu" style="width:40%">
+		<p class="w3-text-black"><h3>Boris</h3>Managing Director<br>069 90 74 96 - 59</p>
+	</div>	
+	
+</div>	
+	  
+<div class="w3-row w3-theme">
+	<div class="w3-col l12 w3-padding-32">
+      <p class="w3-xxlarge w3-center w3-text-white w3-padding-large">Excellence in Quality</p>
+	</div>	
+</div>	
+
+</div>
+</div>	
+
+<!-- INHALT PROJEKT MAGGI -->		
+<div class="mySlides">
+	<div class="w3-display-topleft" style="padding:430px 0px 0px 20px">
+ 	 	<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Maggi</span> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Ideen</span><p></p> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">vom</span>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Wochenmarkt</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Maggi</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Ideen</span><p></p> 
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">vom</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Wochenmarkt</span>
+	</div>
+	
+   <img src="./Bilder/Maggi.jpg" style="width:100%">
+
+<div class="w3-row w3-padding-32 w3-theme">
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<i class="w3-large w3-myfont">Maggi gehört zu den beliebtesten Lebensmittelmarken in Deutschland aus dem Hause Nestlé. Für eine neue Produktrange wurde eine Launch-Kampagne entwickelt, die für eine neue Belebung und neue Shopper für die Kategorie sorgen soll. Im Fokus der Kampagne stehen die &nbsp;<span class="w3-tag w3-light-grey">Millenials</span> und damit eine junge, kaufkräftige Zielgruppe.</i>
+	</div>
+	<div class="w3-col l6 w3-center" style="padding:70px 0px 0px 0px">
+		<img src="./Bilder/Maggi/Maggi_logo_weiss.png" class="w3-round w3-image" alt="Menu" style="width:40%">
+	</div>	
+</div>	  
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/Maggi/Maggi_kueche.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:20px 0px 0px 30px">Kreative Küche<br>für Kreative</h3>
+		<p class="w3-text-black w3-myfont" style="padding:0px 15px 0px 30px">Die Kampagnenidee greift den hohen Anspruch der Zielgruppe nach Authentizität und Selbstverwirklichung auf. Dabei setzen wir die natürlichen, besonderen Zutaten, authentische Rezeptideen und die einfache Zubereitung in das Zentrum der Kommunikation. Gewürzt mit einer Prise Humor und prägnantem Design.</p>
+	</div>	
+</div>	  		
+	
+<div class="w3-row" style="padding: 10px 0px 10px 0px">
+	<img src="./Bilder/Maggi/Maggi_chilli.png" class="w3-round w3-image" alt="Menu" style="width:100%">
+</div>		
+		
+<div class="w3-row">
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:30px 15px 15px 30px">In aller<br> Munde</h3>
+		<p class="w3-text-black w3-myfont" style="padding:0px 15px 0px 30px">Die neue Produktrange „Ideen vom Wochenmarkt“ konnte durch intelligente Platzierungen und crossmediale Aktivierungen viele Millionen Menschen überzeugen. Nicht nur Konsumenten, sondern auch der Handel sind beindruckt.</p>
+	</div>
+	<div class="w3-col l6">
+		<img src="./Bilder/Maggi/Maggi_Displays.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>	
+</div>
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/Maggi/Maggi_Regaleinstecker.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6 w3-light-gray">
+		<h3 class="w3-text-black" style="padding:38px 15px 38px 15px">Die Launch-Kampagne wurde mit dem ECR Award 2018 ausgezeichnet.</h3>
+	</div>
+</div>	  
+
+<div class="w3-row">
+<img src="./Bilder/Maggi/Maggi_box.png" class="w3-image" alt="Menu">	
+</div>	
+		
+<div class="w3-row">
+	
+<div class="w3-row w3-padding-32 w3-myfont">
+
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-text-grey w3-center w3-myfont">KUNDE</h4>
+		<img src="./Bilder/Maggi/Maggi_logo_schwarz.png" class="w3-padding w3-round w3-image w3-center" alt="Menu" style="width:70%">
+		<p class="w3-text-black w3-left-align w3-padding w3-center">Maggi GmbH</p>
+	</div>
+	
+	
+	
+	<div class="w3-col l4 w3-center w3-padding">
+		<h4 class="w3-center w3-text-grey w3-myfont">LEISTUNGEN</h4>
+      <ul class="w3-text-black w3-left-align">
+		<li>Strategische Entwicklung der Kampagneninhalte</li>
+		  <li>Sell-in und Sell-out Werbemittel</li>
+		  <li>Platzierungen PoS</li>
+		  <li>Fachhandels- und Verbraucheranzeigen</li>
+		  <li>Touchpoint-Strategie um den PoS</li>
+		</ul>
+	</div>
+	
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-center w3-text-grey w3-center w3-myfont">ANSPRECHPARTNER</h4>
+		<img src="./Bilder/Maggi/Martina.png" class="w3-circle w3-image w3-opacity-min" alt="Menu" style="width:40%">
+		<p class="w3-text-black"><h3>Martina</h3>Senior Account Manager<br>069 90 74 96 - 47</p>
+	</div>	
+	
+</div>	
+	  
+<div class="w3-row w3-theme">
+	<div class="w3-col l12 w3-padding-32">
+      <p class="w3-xxlarge w3-center w3-text-white w3-padding-large">Maggi sorgt für frische Ideen<br> vom Wochenmarkt</p>
+	</div>	
+</div>	
+
+</div>
+</div>		
+
+<!-- INHALT PROJEKT ROCHE -->		
+<div class="mySlides">
+	<div class="w3-display-topleft" style="padding:430px 0px 0px 20px">
+ 	 	<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Roche</span><p></p>  
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Laborsysteme</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Roche</span><p></p>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Laborsysteme</span> 
+	</div>
+	
+   <img src="./Bilder/Roche.jpg" style="width:100%">
+
+<div class="w3-row w3-padding-32 w3-theme">
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<i class="w3-large w3-myfont">Roche Diagnostics ist der Weltmarktführer im Bereich Laborsysteme. Die Marke cobas® steht für hocheffiziente Diagnose durch ein Höchstmaß an Automatisierung. Für die neuen Systeme aus der cobas® Reihe sollte eine Kampagne entwickelt werden, die Kliniken, Privatlabore und deren leitenden Ärzte als Zielgruppe hatte und Aufmerksamkeit schaffen sollte. &nbsp;<span class="w3-tag w3-light-grey">Millenials</span> und damit eine junge, kaufkräftige Zielgruppe.</i>
+	</div>
+	<div class="w3-col l6 w3-center" style="padding:110px 0px 0px 0px">
+		<img src="./Bilder/Roche/Roche_logo_weiss.png" class="w3-round w3-image" alt="Menu" style="width:40%">
+	</div>	
+</div>	  
+	
+<div class="w3-row" style="padding: 0px 0px 0px 0px">
+	<img src="./Bilder/Roche/2_ROC_Postkarten_Mai-Jun_0515.jpg" class="w3-round w3-image" alt="Menu" style="width:100%">
+</div>		
+		
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/Roche/Mockup_1.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:72px 64px 32px 64px">Ein Multitalent<br>für Experten</h3>
+	</div>
+</div>
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:0px 0px 0px 30px">Humor<br>verkauft</h3>
+		<p class="w3-text-black w3-myfont" style="padding:0px 15px 0px 30px">Eine eher konservative Zielgruppe hat durch viel Lob und Nachfragen bestätigt, das sich auch trockene Produkte durch zielgerichteten Humor besser verkaufen lassen. Die renommierte GWA hat das auch in Zusammenarbeit mit der W&V im Wertschöpfungskalender 2017 noch einmal bestätigt.</p>
+	</div>
+	<div class="w3-col l6">
+		<img src="./Bilder/Roche/ROC_Postkarten_Okt_06_Auswahl6-erweitert.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>	  
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/Roche/cobas(R)_Direkt-Marketing-Kampagne_Brand Factory.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6">
+		<p class="w3-text-black w3-myfont" style="padding:100px 30px 0px 30px">Die Idee war ein hochentwickeltes Laborgerät ein wenig menschlicher wirken zu lassen. Die Marke cobas® erhielt verschiedene Charaktereigenschaften um die Attribute Schnelligkeit, Genauigkeit oder auch Effizienz anders zu spielen. Es entstand die Kampagne „Multitalent“, die mit viel Humor die Leistungseigenschaften der Marke wiederspiegelt. Umgesetzt wurde die Kampagne in einem 3-D Business-Mailing und untermauert mit passenden Gimmicks, die ein Lächeln zaubern und neugierig machen sollte.</p>
+	</div>
+</div>		
+
+<div class="w3-row">
+	<div class="w3-col l6 w3-center">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:40px 32px 0px 32px">„Jetzt pipettier<br> hier nicht so rum!“</h3>
+	</div>
+	<div class="w3-col l6">
+		<img src="./Bilder/Roche/GettyImages-57260580.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>	
+	
+<div class="w3-row w3-padding-32 w3-light-gray">
+	<div class="w3-col l4 w3-padding-large w3-center">
+		<img src="./Bilder/Roche/F1703001_ROC_Postkarten_148x105_Anti_H_Kampagne_150dpi_RGB3.jpg" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>	
+	<div class="w3-col l4 w3-padding-large w3-center">
+		<img src="./Bilder/Roche/F1703001_ROC_Postkarten_148x105_Anti_H_Kampagne_150dpi_RGB8.jpg" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>
+	<div class="w3-col l4 w3-padding-large w3-center">
+		<img src="./Bilder/Roche/F1703001_ROC_Postkarten_148x105_Anti_H_Kampagne_150dpi_RGB10.jpg" class="w3-round w3-image" alt="Menu" style="width:70%">
+	</div>
+</div>		
+		
+<div class="w3-row">
+	
+<div class="w3-row w3-padding-32 w3-myfont">
+
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-text-grey w3-center w3-myfont">KUNDE</h4>
+		<img src="./Bilder/Roche/Roche_logo_schwarz.png" class="w3-padding w3-round w3-image w3-center" alt="Menu" style="width:70%">
+		<p class="w3-text-black w3-left-align w3-padding w3-center">Roche Diagnostics GmbH</p>
+	</div>
+	
+	
+	
+	<div class="w3-col l4 w3-center w3-padding">
+		<h4 class="w3-center w3-text-grey w3-myfont">LEISTUNGEN</h4>
+      <ul class="w3-text-black w3-left-align">
+		<li>Entwicklung der Kampagneninhalte</li>
+		  <li>Konzeption eines monatlich, wechselnden Mailing</li>
+		  <li>Produktion der Mailings inkl. Lettershop</li>
+		</ul>
+	</div>
+	
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-center w3-text-grey w3-center w3-myfont">ANSPRECHPARTNER</h4>
+		<img src="./Bilder/Maggi/Martina.png" class="w3-circle w3-image w3-opacity-min" alt="Menu" style="width:40%">
+		<p class="w3-text-black"><h3>Maria</h3>Senior Account Manager<br>069 90 74 96 - 54</p>
+	</div>	
+	
+</div>	
+	  
+<div class="w3-row w3-theme">
+	<div class="w3-col l12 w3-padding-32">
+      <p class="w3-xxlarge w3-center w3-text-white w3-padding-large">Humor hat viele Talente.</p>
+	</div>	
+</div>	
+
+</div>
+</div>	
+
+<!-- INHALT PROJEKT DR.OETKKER -->		
+<div class="mySlides">
+	<div class="w3-display-topleft" style="padding:430px 0px 0px 20px">
+ 	 	<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Dr.</span>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Oetker</span><p></p> 
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">Frische</span>
+		<span class="w3-xxlarge w3-hide-small w3-white" style="padding:0px 15px 0px 15px">News</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Dr.</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Oetker</span><p></p>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">Frische</span>
+		<span class="w3-large w3-hide-medium w3-hide-large w3-white" style="padding:0px 15px 0px 15px">News</span>
+	</div>
+	
+   <img src="./Bilder/DrOetkker.jpg" style="width:100%">
+
+<div class="w3-row w3-padding-32 w3-theme">
+	<div class="w3-col l6 w3-padding-large w3-border-right">
+		<i class="w3-large w3-myfont">Dr. Oetker, der Lebensmittelgigant aus Bielefeld möchte für seinen vielen Neu-Produkte in der Kategorie Frische beim Handel für eine höhere Aufmerksamkeit sorgen. Bei der Vielzahl an Informationen galt es ein Format zu finden, dass sich von allen anderen Brands abhebt und für echten Newswert beim Handel sorgt.</i>
+	</div>
+	<div class="w3-col l6 w3-center" style="padding:70px 0px 0px 0px">
+		<img src="./Bilder/DrOetkker/oetkker_logo.png" class="w3-round w3-image" alt="Menu" style="width:40%">
+	</div>	
+</div>	  
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:80px 0px 0px 30px">Hier kommt<br>was Frisches</h3>
+		<p class="w3-text-black w3-myfont" style="padding:0px 40px 0px 30px">Die Idee ist einfach einmal anders zu sein. Nicht den 1 Millionsten Salesfolder oder Nachricht per mail zu senden. In der heutigen Zeit verkaufen wir keine Produkte mehr – wir verkaufen Konzepte. Daher haben wir uns dazu entschlossen ein Early-Bird Magazin rund um die neuen Produkte und Trends zu kreieren. Im handlichen Format und auf maximal 8 Seiten stellen wir neue Konzepte aus dem Hause Dr. Oetker vor.</p>
+	</div>
+	<div class="w3-col l6">
+		<img src="./Bilder/DrOetkker/oetkkerheft.jpg" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>	  
+
+<div class="w3-row">
+	<div class="w3-col l12" style="padding:80px 0px 80px 0px">
+		<img src="./Bilder/DrOetkker/oetkkerpinsel_schrift.png" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>		
+
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/DrOetkker.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>
+	<div class="w3-col l6 w3-light-gray">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:12px 0px 11px 32px">Modern.<br>Echt.<br>Kurzweilig – <br>die Frische NEWS.</h3>
+	</div>
+</div>	
+
+<div class="w3-row">
+	<div class="w3-col l12" style="padding:0px 0px 60px 0px">
+		<img src="./Bilder/DrOetkker/oetkkerheft2.png" class=" w3-image" alt="Menu" style="width:100%">
+	</div>
+</div>		
+	
+<div class="w3-row">
+	<div class="w3-col l6">
+		<img src="./Bilder/DrOetkker/oetkker01.jpg" class="w3-image" alt="Menu" style="width:100%">
+	</div>	
+	<div class="w3-col l6 w3-center">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:40px 32px 0px 32px">Jetzt 4 x<br>im Jahr frisch<br>auf den Tisch.</h3>
+	</div>
+</div>		
+	
+<div class="w3-row w3-light-gray">
+	<div class="w3-col l6">
+		<h3 class="w3-text-black w3-xxlarge" style="padding:0px 0px 0px 30px">Aus einem reinen <br>BtB Tool ist auch ein erfolgreiches<br> BtC Tool geworden.</h3>
+	</div>
+	<div class="w3-col l6">
+		<p class="w3-text-black w3-myfont" style="padding:70px 15px 0px 30px">Nicht nur dass die Händler den KAMs wohlwollendes Feedback gegeben haben und die Auflage permanent erhöht werden muss. Mittlerweile finden Sonderformate auch für Konsumenten statt.</p>
+	</div>
+</div>		
+	
+<div class="w3-row">
+	
+<div class="w3-row w3-padding-32 w3-myfont">
+
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-text-grey w3-center w3-myfont">KUNDE</h4>
+		<img src="./Bilder/DrOetkker/oetkker_logo_schwarz.png" class="w3-padding w3-round w3-image w3-center" alt="Menu" style="width:70%">
+		<p class="w3-text-black w3-left-align w3-padding w3-center">Dr. August Oetker Nahrungsmittel KG</p>
+	</div>
+	
+	
+	
+	<div class="w3-col l4 w3-center w3-padding">
+		<h4 class="w3-center w3-text-grey w3-myfont">LEISTUNGEN</h4>
+      <ul class="w3-text-black w3-left-align">
+		<li>ECorporate Design Magazin</li>
+		  <li>Redaktionelle Betreuung</li>
+		  <li>Projektmanagement</li>
+		  <li>Sourcing / Produktion</li>
+		</ul>
+	</div>
+	
+	<div class="w3-col l4 w3-padding w3-center">
+		<h4 class="w3-center w3-text-grey w3-center w3-myfont">ANSPRECHPARTNER</h4>
+		<img src="./Bilder/Droetkker/Parri.png" class="w3-circle w3-image w3-opacity-min" alt="Menu" style="width:40%">
+		<p class="w3-text-black"><h3>Parvin</h3>Client Service Director<br>069 90 74 96 - 60</p>
+	</div>	
+	
+</div>	
+	  
+<div class="w3-row w3-theme">
+	<div class="w3-col l12 w3-padding-32">
+      <p class="w3-xxlarge w3-center w3-text-white w3-padding-large">Spannung bis zum letzten Buchstaben.</p>
+	</div>	
+</div>	
+
+</div>
+</div>
+
+</div>
+  
+	 
+</div> 
+  
+</div> <!-- MODAL INHALT ENDE -->
+
+</div>
+
+	</div>
+
+	
+	
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+<div class="w3-container w3-hide-small">
+	
+	<div class="w3-third w3-left-align"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+		<div class="w3-third">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+	</div>
+	
+	<div class="w3-third w3-right w3-right-align w3-myfont">Datenschutzerklärung<br>Verantwortung<br>Impressum<br>AGB
+	</div>
+</div>
+	
+<div class="w3-container w3-hide-large w3-hide-medium">
+<div class="w3-container">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+</div>
+
+<div class="w3-container">	
+	<div class="w3-half w3-tiny"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+	<div class="w3-half w3-tiny w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>	
+</div>		
+
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Modal Image Gallery
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
