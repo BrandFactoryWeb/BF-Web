@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<title>BRAND FACTORY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kadwa|Titillium+Web" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kadwa", sans-serif;}
+.w3-myfont {font-family: "Titillium Web", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./Bilder/Head_BG.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./Bilder/service.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./Bilder/agency.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image (Projekt) */
+.bgimg-4 {
+  background-image: url("./Bilder/Leistung_03.jpg");
+  min-height: 400px;
+}	
+
+/* Fifth image (Projekt) */
+.bgimg-5 {
+  background-image: url("./Bilder/Icons/BFMAPpositiv.svg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}	
+
+/* Sixth image (Projekt) */
+.bgimg-6 {
+  background-image: url("./Bilder/Nuii.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Seventh image (Projekt) */
+.bgimg-7 {
+  background-image: url("./Bilder/Durchstarter.jpg");
+  max-height: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+	
+/* Aighth image (BF-Map) */
+.bgimg-8 {
+  background-image: url("./Bilder/Icons/MDCLogo1.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-9 {
+  background-image: url("./Bilder/Icons/logo_starbuck.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-10 {
+  background-image: url("./Bilder/Icons/Kahn.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}	
+	
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.mySlides {display:none}	
+.w3-theme {color:#fff !important;background-color:#333333 !important}
+	
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}	
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-battery-full"></i> LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-door-open"></i> JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-comments"></i> BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <img src="./Bilder/logoInvert.png" class="w3-small" alt="BRAND FACTORY" style="width:100%;max-width:160px">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+  </div>
+</div>
+
+
+<!-- Erste Zeile: Headline & Einleitung -->
+<div class="w3-row w3-black w3-padding-64 w3-container" id="about">
+	<h1 class="w3-center w3-black w3-xxxlarge">Allgemeine Geschäftsbedingungen (AGB)</h1>
+</div>
+	
+<div class="w3-content w3-container w3-padding-64">
+	
+<p class="w3-myfont w3-large">
+<b>Geltung</b>
+</p>
+<p class="w3-myfont">
+Diese AGB gelten für Verträge zwischen dem Agenturunternehmen Brand Factory -
+im folgenden BF genannt - und dem Vertragspartner/Kunden. BF erbringt seine
+Leistungen ausschließlich auf der Grundlage dieser allgemeinen
+Geschäftsbedingungen, welche Grundlage jedes Vertrages ist.
+</p>
+
+<p class="w3-myfont w3-large">
+<b>1. Urheber- und Nutzungsrecht</b>
+</p>
+<p class="w3-myfont">
+<b>1.1</b> Alle im Rahmen von Präsentationen, sowie Grafik- und Designaufträgen
+gestellten Entwürfe/ Reinzeichnungen/Bilder/Werke dürfen ohne ausdrückliche
+Einwilligung der BF weder im Original noch bei der Reproduktion verändert werden.
+Weder eine vollständige oder teilweise Nachahmung ist zulässig. BF hat das alleinige
+Nutzungsrecht an den Entwürfen, auch wenn sie nicht die für einen
+Urheberrechtschutz erforderliche „Schöpfungshöhe“ erreichen. Die Übertragung von
+Nutzungsrechten bedarf der Schriftform. Bei Verstoß hiergegen hat der
+Auftraggeber BF eine Vertragsstrafe in Höhe des 5-fachen der vereinbarten
+Vergütung zu bezahlen.
+<br>
+<b>1.2</b> BF überträgt dem Auftraggeber die für den jeweiligen Verwendungszweck
+erforderlichen Nutzungsrechte. Soweit nichts anderes vereinbart ist, wird nur ein
+einfaches Nutzungsrecht übertragen. BF bleibt in jedem Fall, auch wenn sie das
+ausschließliche Nutzungsrecht eingeräumt hat, berechtigt, seine Entwürfe und seine
+Vervielfältigung davon im Rahmen der Eigenwerbung zu verwenden.
+<br>
+<b>1.3.</b> Eine Weitergabe der Nutzungsrechte an Dritte bedarf der schriftlichen
+Vereinbarung zwischen BF und dem Auftraggeber. Bei unberechtigter Nutzung,
+Veränderung, Umgestaltung oder Weitergabe eines Entwurfes – egal ob in
+herkömmlicher oder digitalisierter Form- ist BF berechtigt, eine Vertragsstrafe in
+Höhe des 5-fachen vereinbarten oder mangels Vereinbarung, des 5-fachen üblichen
+Nutzungshonorars zu fordern, zumindest jedoch € 2.000 pro Entwurf und Einzelfall.
+Die Geltendmachung des weitergehenden Schadensersatzes bleibt hiervon
+unberührt.
+<br>
+<b>1.4.</b> Nutzungsrechte des Auftraggebers entstehen erst nach vollständiger Bezahlung
+der Vergütung.
+<br>
+<b>1.5.</b> Entwürfe und Vorschläge des Auftraggebers begründen weder ein eigenes
+Nutzungsrecht noch eine Miturheberschaft.
+</p>
+
+<p class="w3-myfont w3-large">
+<b>2. Angebote, Vergütung</b>
+</p>
+<p class="w3-myfont">
+<b>2.1</b> Alle Preise sind Nettobeträge, die zuzüglich der gesetzlichen Mehrwertsteuer zu
+zahlen sind.
+<br>
+<b>2.2</b> Vor Arbeitsbeginn erhält der Auftraggeber ein Angebot, das den Umfang der
+Leistung quantitativ und qualitativ beschreibt. Grundlage ist ein Beratungsgespräch,
+das mit dem Auftraggeber geführt wird.
+<br>
+<b>2.3</b> BF bleibt an ein Angebot längstens zwei Wochen nach dessen Abgabe gebunden.
+</p>
+
+<p class="w3-myfont w3-large">
+<b>3. Sonderleistungen, Neben- und Reisekosten</b>
+</p>
+<p class="w3-myfont">
+<b>3.1</b> Sonderleistungen (z.B. Produktionsüberwachung) erfolgen nur auf Grundlage
+vorheriger Absprache. Sie werden nach Zeitaufwand erfasst und sind
+kostenpflichtig.
+<br>
+<b>3.2</b> Auslagen für technische Nebenkosten, insbesondere für spezielle Materialien,
+für die Anfertigung von Fotos, Zwischenaufnahmen, Reproduktionen,
+Übersetzungen und Druck etc. sind vom Auftraggeber zu erstatten.
+<br>
+<b>3.3</b> Reisekosten und Spesen sind nach vorheriger Absprache vom Auftraggeber zu
+erstatten. Belege sind vorzulegen.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>4. Zahlung und Fälligkeit</b>
+</p>
+<p class="w3-myfont">
+<b>4.1</b> Die Vergütung ist, wenn nicht anders vereinbart, bei Abnahme fällig und ohne
+Abzug zahlbar. Der Rechnungsbetrag ist, soweit keine andere Zahlungsweise
+vereinbart ist, ohne Rücksicht auf Mängelrügen 8 Tage nach Ausstellung der
+Rechnung ohne jeden Abzug fällig. Werden die bestellten Arbeiten in Teilen
+abgenommen so ist eine entsprechende Teilvergütung jeweils bei Abnahme fällig.
+Erstreckt sich ein Auftrag über längere Zeit, so sind angemessene
+Abschlagszahlungen zu leisten. Sind Entwürfe und Fotos ein wesentlicher
+Bestandteil des Auftrages (z.B. bei Logos oder Corporate Designs), so ist die
+Vergütung dieser Werke bei Ablieferung der ersten Entwürfe bzw. Andrucke fällig.
+Bei außergewöhnlichen Vorleistungen kann angemessene Vorauszahlung verlangt
+werden. Zahlung gelten erst an dem Tag geleistet, an welchem die Firma BF über
+den Rechnungsbetrag verlustfrei verfügen kann.
+<br>
+<b>4.2</b> Ist die Erfüllung des Zahlungsanspruches wegen einer wesentlichen
+Verschlechterung der Vermögensverhältnisse des Auftraggebers gefährdet, so kann
+BF Vorauszahlung verlangen, noch nicht ausgelieferte Ware zurückhalten sowie die
+Weiterarbeit einstellen. Diese Rechte stehen BF auch zu, wenn der Auftraggeber sich
+mit der Bezahlung von Lieferungen in Verzug befindet.
+<br>
+<b>4.3</b> Bei Zahlungsverzug sind, vorbehaltlich der Geltendmachung weiteren Schadens,
+Zinsen von 2% über dem jeweiligen Diskontsatz bei der Deutschen Bundesbank,
+mindestens jedoch bankübliche Verzugszinsen zu entrichten. Zahlungsverzug tritt
+bei Fälligkeit der Forderung der Firma BF ein, ohne dass es einer Mahnung bedarf.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>5. Gestaltungsfreiheit/Produktionsüberwachung</b>
+</p>
+<p class="w3-myfont">
+<b>5.1</b> Im Rahmen des Auftrages besteht Gestaltungsfreiheit für BF.
+<br>
+<b>5.2</b> Bei Übernahme der Produktionsüberwachung ist BF berechtigt, nach bestem
+Wissen und objektiver Beurteilung die notwendigen Entscheidungen zu treffen und
+Anweisungen zu geben.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>6. Dateien/Layouts</b>
+</p>
+<p class="w3-myfont">
+<b>6.1</b> BF ist nicht verpflichtet, Dateien oder Layouts, die im Computer erstellt wurden,
+an den Auftraggeber herauszugeben.
+<br>
+<b>6.2</b> Wünscht der Auftraggeber die Herausgabe von Computerdaten, so ist dies
+schriftlich festzuhalten und gesondert zu vergüten. BF übernimmt nach Herausgabe
+der Daten keine Haftung für deren Richtigkeit oder Vollständigkeit.
+<br>
+<b>6.3</b> Hat BF dem Auftraggeber Computerdateien zur Verfügung gestellt, dürfen diese
+nur mit vorheriger Zustimmung geändert werden.
+</p>	
+	
+	
+<p class="w3-myfont w3-large">
+<b>7. Belegmuster, Referenznachweise</b>
+</p>
+<p class="w3-myfont">
+Von allen vervielfältigten Arbeiten überlässt der Auftraggeber BF 5 bis 10
+einwandfreie Muster unentgeltlich. BF ist berechtigt, diese Muster oder deren
+digitales Äquivalent als Referenz zu verwenden.
+</p>	
+
+<p class="w3-myfont w3-large">
+<b>8. Lieferung, Gefahrübergang</b>
+</p>
+<p class="w3-myfont">
+<b>8.1</b> Soll das Werk oder die Ware versendet werden, geht die Gefahr auf den
+Auftraggeber über, sobald die Sendung an die den Transport durchführende Person
+übergeben worden ist.
+<br>
+<b>8.2</b> Liefertermine sind nur gültig, wenn sie schriftlich vereinbart werden.
+<br>
+<b>8.3</b> Gerät BF in Lieferverzug, so ist zunächst eine angemessene Nachfrist zu
+gewähren. Nach fruchtlosem Ablauf der Nachfrist kann der Auftraggeber vom
+Vertrag zurücktreten.
+<br>
+<b>8.4</b> Betriebsstörungen - sowohl im Betrieb des Auftragnehmers als auch in dem
+eines Zulieferers - oder Fälle höherer Gewalt, berechtigen erst dann zur Kündigung
+des Vertrages, wenn dem Auftraggeber ein weiteres Abwarten nicht mehr zugemutet
+werden kann, anderenfalls verlängert sich die vereinbarte Lieferfrist um die Dauer
+der Verzögerung. Eine Haftung von BF ist in diesen Fällen ausgeschlossen.
+<br>
+<b>8.5</b> Im Falle einer berechtigten Kündigung wegen einer Störung im Betrieb des
+Auftragnehmers entfällt die Vergütung. Im Falle einer berechtigten Kündigung
+wegen einer Störung im Betrieb eines Zulieferers oder wegen höherer Gewalt hat der
+Auftraggeber die geleistete Arbeit gemäß dem vereinbarten Stundensatz zu
+vergüten.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>9. Beanstandungen, Haftung</b>
+</p>
+<p class="w3-myfont">
+<b>9.1</b> BF verpflichtet sich, den Auftrag mit größtmöglicher Sorgfalt auszuführen,
+insbesondere auch überlassene Vorlagen sorgfältig zu behandeln.
+<br>
+<b>9.2</b> BF haftet nur für eigenes Verschulden und nur für Vorsatz und grobe
+Fahrlässigkeit. Sofern BF Fremdleistungen in Auftrag gibt, sind die jeweiligen
+Auftragnehmer keine Erfüllungsgehilfen.
+<br>
+<b>9.3</b> Ein über den Materialwert hinausgehender Schadensersatz ist ausgeschlossen.
+<br>
+<b>9.4</b> Der Auftraggeber hat die Vertragsgemäßheit der gelieferten Werke/Ware sowie
+der zur Korrektur übersandten Vor- und Zwischenerzeugnisse in jedem Fall zu
+prüfen. Mit der Freigabe von Entwürfen, Grafiken oder Reinzeichnungen durch den
+Auftraggeber, übernimmt dieser die Verantwortung für deren Richtigkeit. Für die
+vom Auftraggeber freigegebenen Entwürfe, Texte, Grafiken und Reinzeichnungen
+entfällt jede Haftung.
+<br>
+<b>9.5</b> Bei berechtigten Beanstandungen ist BF unter Ausschluss anderer Ansprüche zur
+Nachbesserung oder Herabsetzung der Vergütung verpflichtet.
+<br>
+<b>9.6</b> Mängel eines Teils der gelieferten Ware berechtigen nicht zur Beanstandung der
+gesamten Lieferung, es sei denn, dass eine Teillieferung für den Auftraggeber
+unbrauchbar ist. Mängel an Teilaufträgen berechtigen nicht zur Annullierung des
+ganzen Auftrages oder anderer erteilter, aber noch nicht erledigter Aufträge.
+<br>
+<b>9.7</b> Bei farbigen Reproduktionen in allen Herstellungsverfahren können geringfügige
+Abweichungen vom Original nicht beanstandet werden. Das gleiche gilt für den
+Vergleich zwischen sonstigen Vorlagen (z.B. Digitaldrucken, Andrucken) und dem
+Endprodukt.
+<br>
+<b>9.8</b> Beanstandungen gleich welcher Art sind innerhalb von 1 Woche nach
+Ablieferung des Werkes bei BF anzuzeigen. Danach gilt das Werk als einwandfrei
+angenommen.
+<br>
+<b>9.9</b> BF haftet nicht für wettbewerbs- und markenrechtliche Zulässigkeit und
+Eintragungsfähigkeit ihrer Entwürfe und sonstigen Designarbeiten. Sofern BF nicht
+ausdrücklich zusichert, dass bei Fotoarbeiten abgebildete Personen oder die Inhaber
+der Rechte an den abgebildeten Werken der bildenden oder angewandten Kunst die
+Einwilligung zu einer Bildveröffentlichung erteilt haben, obliegt die Einholung der im
+Einzelfall notwendigen Einwilligung Dritter oder die Erwirkung von
+Veröffentlichungsgenehmigungen bei Sammlungen, Museen etc. dem Auftraggeber.
+<br>
+<b>9.10</b> BF übernimmt keine Haftung für die Art der Nutzung von Bildern.
+Der Auftraggeber ist dafür verantwortlich, dass durch die Art der Nutzung keine
+Persönlichkeitsrechte, Urheberrechte oder sonstige Rechte Dritter verletzt werden.
+Bei unberechtigter Nutzung, Veränderung, Umgestaltung oder Weitergabe eines
+Vertragswerkes, egal ob in herkömmlicher oder digitalisierter Form, ist BF
+berechtigt, eine Vertragsstrafe in Höhe des 5-fachen vereinbarten oder mangels
+Vereinbarung, des 5-fachen üblichen Nutzungshonorar zu fordern, mindestens
+jedoch € 2.000 pro Werk und Einzelfall. Die Geltendmachung eines weitergehenden
+Schadensersatzes bleibt hiervon unberührt.
+<br>
+<b>9.11</b> Der Auftraggeber versichert, dass er zur Verwendung aller der BF übergebenen
+Vorlagen/Bilder berechtigt ist und das diese Vorlagen/Bilder von Rechten Dritter frei
+sind. Sollte der Auftraggeber entgegen dieser Versicherung nicht zur Verwendung
+berechtigt sein oder sollten die Vorlagen/Bilder nicht frei von Rechten Dritter sein,
+so stellt der Auftraggeber die BF im Innenverhältnis von allen Ersatzansprüchen
+Dritter frei. BF übernimmt keine Haftung für die Verletzung von Rechten Dritter,
+wenn dies im Zusammenhang mit Vorlagen/Bildern geschieht, die der Auftraggeber
+der BF übergeben hat.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>10. Datensicherheit, Datenschutz</b>
+</p>
+<p class="w3-myfont">
+<b>10.1</b> Die Datensicherung obliegt dem Auftraggeber. BF ist berechtigt, Kopien
+zwecks Archivierung anzufertigen und zu speichern. Dabei wird mit großer Sorgfalt
+und Sicherheit vorgegangen. Für einen illegalen oder gewaltsamen Zugriff auf diese
+Daten oder deren Verlust übernimmt BF keine Haftung.
+<br>
+<b>10.2</b> Für die wettbewerbs- und warenzeichenrechtliche Zulässigkeit und
+Eintragungsfähigkeit der Arbeiten übernimmt BF keine Haftung.
+<br>
+<b>10.3</b> Der Auftraggeber versichert, dass er zur Verwendung aller Vorlagen/ Bilder,
+die an BF übergeben werden, berechtigt ist. Sollte er entgegen dieser Versicherung
+nicht zur Verwendung berechtigt sein, stellt der Auftraggeber BF von allen
+Ersatzansprüchen Dritter frei.
+<br>
+<b>10.4</b> BF bewahrt Stillschweigen über Informationen und Daten des Kunden und gibt
+diese nicht an Dritte weiter. Der Kunde verpflichtet sich gleichzeitig, Informationen
+und Daten von BF nicht an Dritte weiter zu geben.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>11. Erfüllungsort und Gerichtsstand</b>
+</p>
+<p class="w3-myfont">
+<b>11.1</b> Als Erfüllungsort und ausschließlicher Gerichtsstand für Zahlungen sowie für
+sämtliche sich zwischen den Parteien ergebenden Streitigkeiten, einschließlich von
+Scheck- und Wechselklagen, gilt der Hauptsitz der Firma BF und im Falle einer zum
+Zwecke des Inkassos erfolgten Abtretung an eine Inkassostelle der Sitz der
+Inkassostelle. Ist der Kunde nicht Vollkaufmann oder juristische Person des
+öffentlichen Rechts, wird hiermit ausdrücklich der Hauptsitz der Firma BF als
+Erfüllungsort und Gerichtstand vereinbart, falls Ansprüche gegen den Kunden
+(Vertragspartner, Käufer) im Mahnverfahren geltend gemacht werden.
+</p>
+
+<p class="w3-myfont w3-large">
+<b>12. Schlussbestimmung</b>
+</p>
+<p class="w3-myfont">
+<b>12.1</b> Sollten einzelne dieser Bedingungen gleich aus welchem Grund unwirksam
+sein, so wird dadurch die Wirksamkeit der übrigen Bedingungen nicht berührt.
+Rechtsunwirksames ist möglichst sinnbewahrend zu ersetzen.#
+<p></p>
+Frankfurt, im März 2010
+</p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+<div class="w3-container w3-hide-small">
+	
+	<div class="w3-third w3-left-align"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+		<div class="w3-third">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+	</div>
+	
+	<div class="w3-third w3-right w3-right-align w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>
+	
+<div class="w3-container w3-hide-large w3-hide-medium">
+<div class="w3-container">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+</div>
+
+<div class="w3-container">	
+	<div class="w3-half w3-tiny"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+	<div class="w3-half w3-tiny w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>	
+</div>		
+
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);    
+}
+</script>
+
+
+</body>
+</html>
