@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<title>BF - Leistungen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kadwa|Titillium+Web" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kadwa", sans-serif;}
+.w3-myfont {font-family: "Titillium Web", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./Bilder/Head_BG.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./Bilder/service.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./Bilder/agency.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image (Projekt) */
+.bgimg-4 {
+  background-image: url("./Bilder/Leistung_03.jpg");
+  min-height: 400px;
+}	
+
+/* Fifth image (Projekt) */
+.bgimg-5 {
+  background-image: url("./Bilder/Icons/BFMAPpositiv.svg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}	
+
+/* Sixth image (Projekt) */
+.bgimg-6 {
+  background-image: url("./Bilder/Nuii.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Seventh image (Projekt) */
+.bgimg-7 {
+  background-image: url("./Bilder/Durchstarter.jpg");
+  max-height: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+	
+/* Aighth image (BF-Map) */
+.bgimg-8 {
+  background-image: url("./Bilder/Icons/MDCLogo1.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-9 {
+  background-image: url("./Bilder/Icons/logo_starbuck.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-10 {
+  background-image: url("./Bilder/Icons/Kahn.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}	
+	
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.mySlides {display:none}	
+.w3-theme {color:#fff !important;background-color:#333333 !important}
+	
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}	
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-battery-full"></i> LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-door-open"></i> JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-comments"></i> BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <img src="./Bilder/logoInvert.png" class="w3-small" alt="BRAND FACTORY" style="width:100%;max-width:160px">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+  </div>
+</div>
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-bottomleft w3-padding" style="white-space:nowrap;">
+    <span class="w3-center w3-padding w3-xxxlarge w3-white w3-animate-opacity">Willkommen</span>
+	  <span class="w3-center w3-white w3-xxxlarge w3-animate-opacity w3-padding">bei</span>
+	  <p style="padding: 0px 0px 1px 0px"></p>
+	<span class="w3-center w3-padding w3-white w3-xxxlarge w3-animate-opacity">BRAND FACTORY</span>
+	  <p ></p>
+  </div>
+</div>
+
+<!-- Dritte Zeile: Headline & Einleitung -->
+<div class="w3-row w3-black w3-padding-64 w3-container" id="portfolio">
+	<h1 class="w3-center w3-black w3-xxxlarge">Unsere Leistungsbausteine –<br> sinnvoll miteinander verzahnt</h1>
+ 	<p class="w3-content w3-myfont w3-xlarge">Gute und einprägsame Kampagnen erfüllen unserer Meinung nach immer fünf wichtige Grundsätze <b>Authentizität, Haltung, Konsistenz, Aufmerksamkeit und Mehrwerte.</b><br> So sorgen wir für Begeisterung in ihrer Zielgruppe und verknüpfen Menschen.
+	</p>
+</div>
+
+<!-- Third Grid: Leistungen -->
+<div class="w3-row">
+  <div class="w3-half w3-white w3-container" style="height:620px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Holistische Kampagnen</h1>
+      <img src="./Bilder/Icons/netzwerk.png" class="w3-margin w3-hover-opacity" alt="Person" style="height:220px;transition:0.5s">
+      <div class="w3-center w3-padding-large">
+        <p class="w3-myfont w3-xlarge">Wir entwickeln vernetzte Kampagnen, die Menschen einfängt und sie von ihrer Idee oder Produkt überzeugt.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-half w3-light-grey w3-hide-small w3-container" style="height:620px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Shopper Activation</h1>
+      <img src="./Bilder/Icons/einkaufswagen.png" class="w3-margin w3-hover-opacity" alt="Person" style="height:220px;transition:0.5s">
+      <div class="w3-center w3-padding-large">
+        <p class="w3-myfont w3-xlarge">Wir haben effiziente Lösungen, um gezielt Absatz und Umsatz in alle Kategorien und Branchen zu fördern.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-container" style="height:620px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Design Thinking</h1>
+      <img src="./Bilder/Icons/Odol_flasche.png" class="w3-margin w3-hover-opacity" alt="Person" style="height:220px;transition:0.5s">
+      <div class="w3-center w3-padding-large">
+        <p class="w3-myfont w3-xlarge">Wir konzipieren Packaging- und Corporate Designs und checken auf unserem Exklusivtool meindesigncheck.com erste Konsumentenreaktionen</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-half w3-white w3-container" style="height:620px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Eventmarketing</h1>
+      <img src="./Bilder/Icons/puzzel.png" class="w3-margin w3-hover-opacity" alt="Person" style="height:220px;transition:0.5s">
+      <div class="w3-center w3-padding-large">
+        <p class="w3-myfont w3-xlarge">Wir verbinden Menschen und Marken an außergewöhnlichen Locations zu fairen Budgets auf Basis ganzheitlicher Ideen.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="w3-half w3-light-grey w3-hide-large w3-hide-medium w3-container" style="height:620px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Shopper Activation</h1>
+      <img src="./Bilder/Icons/einkaufswagen.png" class="w3-margin w3-hover-opacity" alt="Person" style="height:220px;transition:0.5s">
+      <div class="w3-center w3-padding-large">
+        <p class="w3-myfont w3-xlarge">Wir haben effiziente Lösungen, um gezielt Absatz und Umsatz in alle Kategorien und Branchen zu fördern.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Dritte Zeile: Headline & Einleitung -->
+<div class="w3-row w3-black w3-padding-64 w3-container">
+	<h1 class="w3-center w3-black w3-xxxlarge">Höchste Flexibilität in der Zusammenarbeit</h1>
+ 	<p class="w3-content w3-myfont w3-xlarge">Ob kleine oder große Aufträge. Ob Full-Service oder Teilbereiche. Wir garantieren Ihnen eine hohe Qualität zu marktgerechten Preisen. Und das mit vollem Herzblut.
+	</p>
+</div>
+
+<!-- Third Grid: Leistungen -->
+<div class="w3-row">
+	
+  <div class="w3-half w3-white w3-container" style="height:820px">
+	  
+    <div class="w3-padding-64">
+      <h1 class="w3-center">Leistungen</h1>
+		
+		<ul class="w3-myfont w3-large">
+			<li>Strategie & Beratung </li>
+			<li>Ideenfindung und Kampagnen-Konzeption</li>
+			<li>Entwicklung von Botschaften</li>
+			<li>Produktneueinführungen</li>
+			<li>Promotions</li>
+			<li>Kundenbindungsprogramme</li>
+			<li>Projekt-Management von Verträgen bis Reporting</li>
+			<li>Sell-in Kommunikation</li>
+			<li>Packaging-Design</li>
+			<li>Kreation und Produktion Werbematerialien</li>
+			<li>Gestaltung und Programmierung Aktionsseiten</li>
+			<li>Experience Management </li>
+			<li>Akquisition Partner / Kooperationen</li>
+			<li>Absicherung Promotion-Risiko</li>
+			<li>Vertriebstagungen und Roadshows</li>
+			<li>Konfektionierung, Clearing und Fulfillment</li>
+			<li>Consumer Care, Infomanagement</li>
+			<li>Einkauf und Steuerung von Werbemitteln</li>
+		</ul>
+      </div>
+	  
+    </div>
+	
+  <div class="w3-half w3-light-grey w3-container" style="height:820px">
+	  
+    <div class="w3-padding-64">
+		
+      <h1 class="w3-center">Vorteile</h1>
+		<ul class="w3-myfont w3-large">
+			<li>20 Jahre (Shopper-) Marketing Erfahrung</li>
+			<li>maßgeschneiderte Lösungen</li>
+			<li>höchste Transparenz durch Reportings</li>
+			<li>Ihre Zufriedenheit steht in unserem Fokus</li>
+			<li>Top 10 der besten Shopper-Agenturen in Deutschland</li>
+		</ul>
+      </div>
+	  
+	  
+	  <div class="w3-container w3-center">
+	  			<p class="w3-myfont w3-xlarge">Lassen Sie sich von uns beraten und<br> holen Sie sich Ihr kostenloses & unverbindliches Angebot.</p>
+	  		  	<h4 class="w3-center w3-text-black w3-xlarge"><button class="w3-button w3-white w3-border w3-border-black w3-round-large" onclick="document.getElementById('id01').style.display='block'">Angebot anfordern</button></h4>
+	  </div>
+	  
+    </div>
+	
+  </div>
+
+<!-- Modal Section -->
+<div class="w3-container">
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+		<div class="w3-card-4">
+ 			<div class="w3-container w3-black">
+	        	<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright">&times;</span>
+    			<h2>Angebotsformular anfordern</h2>
+  			</div>
+  			<form class="w3-container w3-myfont" action="/action_page.php">
+				<p style="padding: 25px 0px 0px 0px">
+					<select class="w3-select" name="anrede">
+ 						<option value="" disabled selected>Anrede</option>
+  						<option value="1">Herr</option>
+  						<option value="2">Frau</option>
+					</select>
+   				</p>
+				<p>      
+    				<label class="w3-text-black"><b>Vorname</b></label>
+    				<input class="w3-input w3-border w3-light-gray" required name="first" type="text" placeholder="Vorname">
+				</p>
+   				<p>      
+    				<label class="w3-text-black"><b>Nachname</b></label>
+    				<input class="w3-input w3-border w3-light-gray" required name="last" type="text" placeholder="Nachname">
+				</p>
+				<p>      
+    				<label class="w3-text-black"><b>E-Mail</b></label>
+    				<input class="w3-input w3-border w3-light-gray" required name="mail" type="email" placeholder="E-Mail Adresse">
+				</p>
+				<p>      
+    				<label class="w3-text-black"><b>Telefon</b></label>
+    				<input class="w3-input w3-border w3-light-gray" required name="Telefon" type="text" placeholder="Telefonnummer">
+				</p>
+				<p>      
+					<div>
+  						<div class="w3-half" style="padding: 0px 10px 15px 0px">
+   							<label class="w3-text-black"><b>Straße</b></label>
+    						<input class="w3-input w3-border w3-light-gray" required name="straße" type="text" placeholder="Straße">
+  						</div>
+  						<div class="w3-half" style="padding: 0px 0px 15px 0px">
+    						<label class="w3-text-black"><b>Hausnummer</b></label>
+    						<input class="w3-input w3-border w3-light-gray" required name="hausnummer" type="text" placeholder="Hausnummer">
+  						</div>
+					</div>
+				</p>
+				<p>      
+					<div> 
+  						<div class="w3-half" style="padding: 0px 10px 40px 0px">
+   							<label class="w3-text-black"><b>PLZ</b></label>
+    						<input class="w3-input w3-border w3-light-gray" required name="plz" type="text" placeholder="Postleitzahl">
+  						</div>
+  						<div class="w3-half" style="padding: 0px 0px 40px 0px">
+    						<label class="w3-text-black"><b>Stadt</b></label>
+    						<input class="w3-input w3-border w3-light-gray" required name="stadt" type="text" placeholder="Stadt">
+  						</div>
+					</div>
+				</p>
+				<p style="padding: 0px 0px 5px 0px">
+					<select class="w3-select" name="land">
+ 						<option value="" disabled selected>Land</option>
+  						<option value="1">Belgien</option>
+  						<option value="2">Bulgarien</option>
+						<option value="1">Dänemark</option>
+  						<option value="2">Deutschland</option>
+						<option value="1">Estland</option>
+  						<option value="2">Finnland</option>
+						<option value="1">Frankreich</option>
+  						<option value="2">Griechenland</option>
+						<option value="1">Großbritanien und Nordirland</option>
+  						<option value="2">Irland</option>
+						<option value="1">Italien</option>
+  						<option value="2">Kroatien</option>
+						<option value="1">Lettland</option>
+  						<option value="2">Litauen</option>
+						<option value="1">Luxemburg</option>
+  						<option value="2">Malta</option>
+						<option value="1">Niederlande</option>
+  						<option value="2">Österreich</option>
+						<option value="1">Polen</option>
+  						<option value="2">Portugal</option>
+						<option value="1">Rumänien</option>
+  						<option value="2">Schweden</option>
+						<option value="1">Schweiz</option>
+  						<option value="2">Slowakei</option>
+						<option value="1">Spanien</option>
+  						<option value="2">Tschechiche Repuplik</option>
+						<option value="1">Ungarn</option>
+  						<option value="2">Zypern</option>
+					</select>
+   				</p>
+
+				<p style="padding: 15px 0px 0px 0px">      
+					<input class="w3-check" type="checkbox" name="datenschutz">
+					<label>Ich bestätige die <a href="BF-Datenschutz.html">Datenschutzbestimmungen</a> gelesen zu haben.</label>
+				</p>
+				<p class="w3-center" style="padding: 20px 0px 30px 0px">
+    				<button class="w3-button w3-black w3-section" type="submit"><i class="fa fa-paper-plane"></i> &nbsp;&nbsp;Absenden</button>
+				</p>
+  			</form>
+		</div>
+    </div>
+  </div>
+</div>	
+	
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+<div class="w3-container w3-hide-small">
+	
+	<div class="w3-third w3-left-align"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+		<div class="w3-third">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+	</div>
+	
+	<div class="w3-third w3-right w3-right-align w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>
+	
+<div class="w3-container w3-hide-large w3-hide-medium">
+<div class="w3-container">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+</div>
+
+<div class="w3-container">	
+	<div class="w3-half w3-tiny"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+	<div class="w3-half w3-tiny w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>	
+</div>		
+
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);    
+}
+</script>
+
+
+</body>
+</html>
