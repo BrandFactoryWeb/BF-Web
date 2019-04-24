@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<title>BRAND FACTORY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kadwa|Titillium+Web" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kadwa", sans-serif;}
+.w3-myfont {font-family: "Titillium Web", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./Bilder/Head_BG.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./Bilder/service.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./Bilder/agency.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image (Projekt) */
+.bgimg-4 {
+  background-image: url("./Bilder/Leistung_03.jpg");
+  min-height: 400px;
+}	
+
+/* Fifth image (Projekt) */
+.bgimg-5 {
+  background-image: url("./Bilder/Icons/BFMAPpositiv.svg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}	
+
+/* Sixth image (Projekt) */
+.bgimg-6 {
+  background-image: url("./Bilder/Nuii.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Seventh image (Projekt) */
+.bgimg-7 {
+  background-image: url("./Bilder/Durchstarter.jpg");
+  max-height: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+	
+/* Aighth image (BF-Map) */
+.bgimg-8 {
+  background-image: url("./Bilder/Icons/MDCLogo1.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-9 {
+  background-image: url("./Bilder/Icons/logo_starbuck.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-10 {
+  background-image: url("./Bilder/Icons/Kahn.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}	
+	
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.mySlides {display:none}	
+.w3-theme {color:#fff !important;background-color:#333333 !important}
+	
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}	
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-battery-full"></i> LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-door-open"></i> JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-comments"></i> BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <img src="./Bilder/logoInvert.png" class="w3-small" alt="BRAND FACTORY" style="width:100%;max-width:160px">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+  </div>
+</div>
+
+
+<!-- Erste Zeile: Headline & Einleitung -->
+<div class="w3-row w3-black w3-padding-64 w3-container" id="about">
+	<h1 class="w3-center w3-black w3-xxxlarge">Unternehmensethik - Unsere gemeinsame Verpflichtung</h1>
+</div>
+	
+<div class="w3-content w3-container w3-padding-64">
+	
+<p class="w3-myfont">
+Die Brand Factory Werbeagentur hat sich bisher bei ihrer Tätigkeit und in ihren Beziehungen zu Kunden, Mitarbeitern, Banken und Lieferanten von ethischen Grundsätzen leiten lassen. Das Ergebnis dieser Verhaltensweise ist ein hervorragender fachlicher und ethischer Ruf.
+</p>
+
+<p class="w3-myfont">
+Der Zweck dieses betrieblichen Verhaltens- und Ethik-Kodex ist die Bekräftigung unserer Verpflichtung zu den höchsten Maßstäben rechtlichen und ethischen Verhaltens in unserem Handeln.
+</p>	
+	
+<p class="w3-myfont">
+Dieser Kodex soll alle derzeitigen Mitarbeiter und alle zukünftigen Mitarbeiter mit den Verhaltensnormen vertraut machen, die von Angestellten in Bezug auf ihr Verhalten erwartet werden.
+</p>
+	
+<p class="w3-myfont">
+Wir erwarten, dass die in diesem Kodex dargelegten Standards von allen Mitarbeitern eingehalten werden, da bereits ein einziger Mitarbeiter das Image und das Ansehen und das Image aller anderen durch fehlerhaftes Verhalten negativ beeinflussen kann.
+</p>	
+	
+<p class="w3-myfont">
+Wir erwarten auch, dass die in diesem Kodex dargelegten Standards von unseren Geschäftspartnern eingehalten werden.
+</p>	
+	
+<p class="w3-myfont">
+Ihre Einhaltung der in diesem Dokument verankerten Grundsätze ist auch in Zukunft Garant für unseren guten Ruf, für persönliche Integrität, Ethik und höchstes professionelles Niveau.
+</p>	
+	
+<p class="w3-myfont">
+Bei einem etwaigen Konflikt zwischen diesem Kodex und ergänzenden Grundsätzen und Gesetzen, die sich auf unsere Tätigkeit beziehen, ist die jeweils strengere Anforderung zu befolgen.
+</p>	
+	
+<p class="w3-myfont">
+Wenn wir uns in einer Situation befinden, in der wir über die richtige Verhaltensweise im Zweifel sind, stellen wir uns zunächst folgende Fragen:
+</p>	
+
+		<ul class="w3-myfont">
+			<li>Ist die Handlungsweise rechtmäßig und legal?</li>
+			<li>Ist die Handlungsweise ethisch i.S.d. Kodex?</li>
+			<li>Stimmt die Handlungsweise mit diesem Kodex und allen Grundsätzen und Gesetzen überein, die für meine Tätigkeit relevant sind?</li>
+			<li>Wie wirkt sich meine Entscheidung auf andere aus, speziell auf unsere Mandanten, das Unternehmen und andere Mitarbeiter?</li>
+			<li>In welchem Licht würde meine Entscheidung bei anderen erscheinen? Wenn Ihre Handlungsweise zwar legal ist, aber den Anschein eines Fehlverhaltens hat, sollten Sie alternative Schritte in Erwägung ziehen.</li>
+			<li>Wie würde ich mich fühlen, wenn meine Entscheidung bei anderen oder sogar öffentlich bekannt würde? Könnte die Entscheidung wirklich gerechtfertigt und verteidigt werden?</li>
+			<li>Sollte ich bezüglich dieser Handlungsweise meine Geschäftsführung oder andere Mitarbeiter um Rat fragen?</li>
+		</ul>
+
+<p class="w3-myfont w3-large">
+<b>Gemeinsame Grundwerte</b>
+</p>	
+	
+<p class="w3-myfont">
+Ehrlichkeit äußert sich im Reden und im Verhalten.
+</p>
+	
+<p class="w3-myfont">
+Ehrlichkeit im Reden bedeutet, die Wahrheit zu sagen und zwar sowohl untereinander als auch gegenüber Dritten.
+</p>
+	
+<p class="w3-myfont">
+Ehrlichkeit im Verhalten bedeutet, dass wir einen übernommenen Auftrag, ohne einen eigenen Vorteil wahrzunehmen, im Sinne unserer Auftraggeber bestmöglich bearbeiten.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Wahrhaftigkeit</b>
+</p>		
+	
+<p class="w3-myfont">
+Wahrhaftigkeit zeigt sich in der Treue zu sich selbst und in der Treue zu den eigenen Überzeugungen. Wir bleiben uns und unseren Überzeugungen treu auch wenn dies durch mangelnde Akzeptanz Dritter zu persönlichen Nachteilen führt.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Gradlinigkeit</b>
+</p>	
+	
+<p class="w3-myfont">
+Gradlinigkeit zeigt sich im Verhalten und im Denken. Gradlinigkeit bedeutet, dass wir uns hinsichtlich unserer Überzeugungen nicht verbiegen lassen, auch wenn es uns in Einzelsituationen zum Nachteil gereicht.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Toleranz</b>
+</p>	
+	
+<p class="w3-myfont">
+Toleranz bedeutet, andere und deren Meinungen zu akzeptieren.
+</p>	
+	
+<p class="w3-myfont">
+Toleranz bedeutet aber auch die bewusste Entscheidung von anderen und deren Meinung Abstand zu nehmen und sich von diesen zu distanzieren.
+</p>		
+	
+<p class="w3-myfont w3-large">
+<b>Solidarität</b>
+</p>	
+	
+<p class="w3-myfont">
+Solidarität bedeutet Einigkeit in Bezug auf die Einstellung zum Beruf.
+</p>		
+	
+<p class="w3-myfont">
+Solidarität bedeutet darüber hinaus sich gegenseitig zu helfen, wenn es erforderlich ist.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Hilfsbereitschaft</b>
+</p>
+	
+<p class="w3-myfont">
+Hilfsbereitschaft ist Teil der gemeinsamen Zusammenarbeit im beruflichen wie im Zwischenmenschlichen.
+</p>	
+	
+<p class="w3-myfont">
+Hilfsbereitschaft dient uns auch dazu, einen erkannten Mangel oder eine änderungswürdige Situation zu verbessern.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Kollegialität</b>
+</p>	
+	
+<p class="w3-myfont">
+Kollegialität besteht nicht nur zwischen verschiedenen Berufsangehörigen und zwischen Mitarbeitern unseres Unternehmens, sondern auch zu Mitarbeitern anderer Unternehmen und Institutionen.
+</p>	
+	
+<p class="w3-myfont">
+Kollegialität bedeutet vernünftig und höflich miteinander umzugehen.
+</p>	
+	
+<p class="w3-myfont">
+Kollegialität gebietet es, Kritik in der Sache deutlich aber in der Form verbindlich zu äußern.
+</p>		
+	
+<p class="w3-myfont w3-large">
+<b>Fairness</b>
+</p>	
+	
+<p class="w3-myfont">
+Fairness bedeutet Angemessenheit im Handeln.
+</p>	
+	
+<p class="w3-myfont">
+Fairness setzen wir gleich mit einer individuellen und von Dritten akzeptierbaren Gerechtigkeit.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Geduld</b>
+</p>		
+	
+<p class="w3-myfont">
+Geduld bedeutet, warten zu können.
+</p>		
+	
+<p class="w3-myfont">
+Geduld bedeutet auch Schwierigkeiten mit Gelassenheit und Standhaftigkeit zu überstehen.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Bescheidenheit</b>
+</p>		
+	
+<p class="w3-myfont">
+Bescheidenheit bedeutet, wenig für sich zu beanspruchen, selbst wenn sich die Möglichkeit der persönlichen Vorteilnahme bietet.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Höflichkeit</b>
+</p>	
+	
+<p class="w3-myfont">
+Höflichkeit äußert sich in der Verhaltensweise, die von Respekt vor dem anderen geprägt ist.
+</p>	
+	
+<p class="w3-myfont">
+Höflichkeit äußert sich in folgendem Verhalten:
+</p>	
+	
+		<ul class="w3-myfont">
+			<li>man begrüßt und verabschiedet sich persönlich von anderen</li>
+			<li>man bevorzugt Frauen und ältere Menschen gegenüber Männern und jüngeren Menschen, etwa bei der Begrüßung oder der Erteilung von Hilfe</li>
+			<li>man drückt sich sprachlich in distanzierter und respektvoller Weise aus</li>
+			<li>man vermeidet umgangssprachliche Elemente und inhaltsleere Floskeln</li>
+			<li>man hält sich mit negativen Meinungsäußerungen gegenüber anderen zurück</li>
+			<li>man bringt andere nicht in Verlegenheit oder peinliche Situationen</li>
+			<li>man dankt einem anderen für etwas, weicht selbst einem Dank aber taktvoll aus</li>
+		</ul>	
+	
+<p class="w3-myfont w3-large">
+<b>Verhalten gegenüber Kunden</b>
+</p>
+	
+<p class="w3-myfont">
+Unsere Kunden bezahlen unseren Arbeitsplatz, daher haben Sie Anspruch auf unsere volle Konzentration bei der Arbeit.
+</p>	
+	
+<p class="w3-myfont">
+Unsere Kunden haben jeden Tag die Wahl, sich für eine andere Werbeagentur zu entscheiden, daher möchten wir unsere Kunden nicht nur zufrieden stellen, sondern immer wieder aufs Neue für uns begeistern. Dieses erreichen wir, in dem wir versuchen, die Erwartungen unserer Kunden regelmäßig ein bisschen zu übertreffen.
+</p>	
+	
+<p class="w3-myfont">
+Unsere Kunden beauftragen uns, damit wir uns in einer für sie fremden Materie um ihre Angelegenheiten kümmern. Wir tun dies als wären es unsere eigenen Angelegenheiten.
+</p>	
+
+<p class="w3-myfont">
+Wir versuchen die Sprache unserer Kunden zu sprechen und verstecken uns nicht hinter Fachbegriffen.
+</p>	
+	
+<p class="w3-myfont">
+Wir versetzen uns in die Lage unserer Kunden, da unsere Kunden erwarten, dass wir Verständnis für ihre Belange haben. Wir verstehen, dass unsere Kunden als Unternehmer konservativ denken und kaufmännische Vorsicht walten lassen, um sich vor Vermögenseinbußen zu schützen und andererseits ihr Unternehmen fortschrittlich mit Weitblick zukunftssicher machen müssen.
+</p>	
+	
+<p class="w3-myfont">
+Wir kleiden uns alle so, wie es von einem ordentlichen Dienstleistungsunternehmen erwartet werden kann.
+</p>	
+	
+<p class="w3-myfont">
+Wir empfangen und behandeln unsere Kunden in unserer Agentur wie einen Gast.
+</p>	
+	
+<p class="w3-myfont">
+Wir nehmen unsere Kunden ernst und sind erst dann zufrieden, wenn auch unsere Kunden zufrieden sind.
+</p>	
+	
+<p class="w3-myfont">
+Wir geben keine Versprechungen ab, die wir nicht halten können. Wenn wir Termine zusagen, halten wir diese.
+</p>	
+	
+<p class="w3-myfont">
+Wir bearbeiten keine Probleme, sondern lösen sie, denn wir verstehen uns als kompetente Problemlöser unserer Kunden.
+</p>	
+	
+<p class="w3-myfont">
+Die Aussage „Das geht nicht“ gibt es bei uns nicht.
+</p>	
+	
+<p class="w3-myfont">
+Trotz notwendiger Routinen in der Arbeit geben wir unseren Kunden das Gefühl, individuell betreut zu werden. Wir werben um Verständnis für unsere Standards (Arbeitsabläufe), weil wir der festen Überzeugung sind, dass diese gut sind für eine optimale Betreuung unserer Kunden.
+</p>		
+	
+<p class="w3-myfont">
+Wir gehen mit Kritik offen um. Wir sind dankbar für jede Form der Kritik unserer Kunden, da sie Ausdruck von Wertschätzung ist. Wir akzeptieren, dass wir uns durch Kritik weiterentwickeln können. 
+</p>		
+	
+<p class="w3-myfont">
+Obwohl wir uns als Dienst - Leister im wahren Sinne des Wortes verstehen, ist unser Verhalten gegenüber Kunden nicht von falsch verstandener Unterwürfigkeit sondern von Partnerschaft geprägt.
+</p>
+	
+<p class="w3-myfont w3-large">
+<b>Verhalten gegenüber anderen Mitarbeitern</b>
+</p>	
+	
+<p class="w3-myfont">
+Wir tolerieren keine Form der Diskriminierung wegen Geschlecht, Hautfarbe, Nationalität, oder Religion.
+</p>	
+	
+<p class="w3-myfont">
+Wir tolerieren keine Form des Mobbing.
+</p>	
+	
+<p class="w3-myfont">
+Wir akzeptieren aber auch, dass in einem Unternehmen nicht alle Mitarbeiter Freunde sein können.
+</p>	
+	
+<p class="w3-myfont">
+Wir lösen unsere Probleme zunächst untereinander. Nur wenn wir zu keiner Lösung kommen, sprechen wir Dritte zur Problemlösung an.
+</p>	
+	
+<p class="w3-myfont">
+Wir informieren die Geschäftsführung grundsätzlich über jede Form der Diskriminierung oder des Mobbing.
+</p>	
+	
+<p class="w3-myfont">
+Wir behandeln andere Mitarbeiter i. S. unserer gemeinsamen Grundwerte, nämlich höflich und kollegial. Kollegialität bedeutet in diesem Zusammenhang auch, sich gegenseitig zu helfen und zu unterstützen sowie Informationen weiterzugeben.
+</p>	
+	
+<p class="w3-myfont">
+Wir begrüßen Kritik untereinander, denn durch Kritik entwickeln wir uns weiter. Wir äußern Kritik immer sachlich und achten darauf, dass diese nicht verletzend ist. Wir nehmen Kritik an und ändern unser Verhalten nachhaltig.
+</p>	
+	
+<p class="w3-myfont">
+Wir akzeptieren, dass in einem arbeitsteiligen Beruf wie der Werbung der eine ohne den anderen nicht sinnvoll arbeiten kann. Wir arbeiten im Team. Im Team zu arbeiten bedeutet, sich auf den anderen und seine Arbeitsergebnisse verlassen zu können. Dies bedeutet Verantwortung nicht nur für die eigene Arbeit.
+</p>	
+	
+<p class="w3-myfont">
+Trotz Arbeit im Team stören wir uns nicht gegenseitig bei der Arbeit, denn Teamarbeit bedeutet nicht alles zusammen zu machen. Wir reduzieren wechselseitige Störungen durch entsprechende Absprachen auf ein Mindestmaß.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Verhalten gegenüber Lieferanten</b>
+</p>	
+
+<p class="w3-myfont">
+Unsere Lieferanten sorgen für eine reibungslose Versorgung unserer Unternehmen mit Literatur, EDV, Büromaterial usw. und garantieren damit, dass wir unserer eigentlichen Aufgabe nachgehen können.
+</p>	
+	
+<p class="w3-myfont">
+Wir behandeln unsere Lieferanten daher höflich und respektvoll.
+</p>	
+	
+<p class="w3-myfont">
+Wir vertrauen unseren Lieferanten, kontrollieren aber trotzdem regelmäßig die Qualität und das Preis-Leistungsverhältnis.
+</p>		
+	
+<p class="w3-myfont w3-large">
+<b>Verhalten außerhalb der Agentur</b>
+</p>		
+	
+<p class="w3-myfont">
+Wir beachten insbesondere auch außerhalb der Agentur unsere Verschwiegenheitspflicht, die sich nicht nur auf fremde Dritte sondern auch auf die Familie und Freunde erstreckt.
+</p>		
+	
+<p class="w3-myfont">
+Wir wissen, dass wir auch außerhalb der Agentur als Repräsentanten unserer Agentur wahrgenommen werden und verhalten uns entsprechend unserer Grundwerte, um das Image der Agentur zu bestätigen oder zu verbessern.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Einhaltung von Gesetzen, Regeln und Vorschriften</b>
+</p>	
+	
+<p class="w3-myfont">
+Wir achten und beachten das Gesetz.
+</p>	
+	
+<p class="w3-myfont">
+Innerhalb des gesetzlichen Rahmens versuchen wir für unsere Kunden den höchstmöglichen Erfolg zu erreichen.
+</p>		
+	
+<p class="w3-myfont">
+Wir ermahnen auch Dritte (auch Behörden und Institutionen) sich an ihren gesetzlichen Auftrag oder ihre gesellschaftliche Aufgabe zu halten.
+</p>	
+	
+<p class="w3-myfont">
+Wir achten und beachten auch die agenturintern aufgestellte Regeln und Vorschriften. Wir ermahnen andere Mitarbeiter bei festgestellten Verstößen gegen diese Regeln und Vorschriften.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Verständnis von Qualität</b>
+</p>
+	
+<p class="w3-myfont">
+Qualität bedeutet für uns, eine Dienstleistung mindestens in der vereinbarten Art und Weise, zur vereinbarten Zeit und  zum vereinbarten Entgelt dem Adressaten der Dienstleistung in verständlicher und äußerlich ansprechender Form zur Verfügung zu stellen.
+</p>	
+	
+<p class="w3-myfont">
+Wir messen die Qualität unserer Leistung mit dem Ziel, unsere Qualität permanent zu verbessern.
+</p>	
+	
+<p class="w3-myfont">
+Wir orientieren uns bei der Beurteilung unserer Qualität nicht an relativen sondern an absoluten Maßstäben mit dem Ziel selbst Maßstäbe in der Qualität einer Leistung zu setzen.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Arbeitseinstellung</b>
+</p>	
+	
+<p class="w3-myfont">
+Unsere Arbeitseinstellung ist von Loyalität gegenüber unseren Kunden, unseren Mitarbeitern, unserer Geschäftsführung und gegenüber unseren Gesellschaften geprägt.
+</p>	
+	
+<p class="w3-myfont">
+Loyalität gegenüber unseren Kunden bedeutet, dass wir uns für die Belange unserer Kunden mit unserem ganzen Können, unserer Leidenschaft und unserem Know-how so einsetzen, als würden wir unsere eigenen Belange vertreten.
+</p>	
+	
+<p class="w3-myfont">
+Loyalität bedeutet für unsere Geschäftsführung Fürsorgepflichten gegenüber unseren Mitarbeitern wahrzunehmen.
+</p>	
+	
+<p class="w3-myfont">
+Loyalität bedeutet für unsere Mitarbeiter Treuepflichten gegenüber unserer Geschäftsführung und gegenüber unseren Gesellschaften zu erfüllen.
+</p>	
+	
+<p class="w3-myfont">
+Unsere Arbeitseinstellung rührt aus einer Berufung zum Beruf her und definiert sich durch folgende Eigenschaften:
+</p>	
+	
+		<ul class="w3-myfont">
+			<li>Zuverlässigkeit</li>
+			<li>Pünktlichkeit</li>
+			<li>Flexibilität</li>
+			<li>Belastbarkeit</li>
+			<li>Fleiß und Engagement</li>
+			<li>Bereitschaft zur permanenten Fort- und Weiterbildung</li>
+			<li>Bereitschaft Fehler zuzugeben und offen, d.h. vor Entdeckung durch Dritte damit umzugehen</li>
+		</ul>	
+
+<p class="w3-myfont">
+Wir akzeptieren, dass wir in einer Leistungsgesellschaft leben und bekennen uns im positiven Sinn zur Leistung.
+</p>
+	
+<p class="w3-myfont">
+Wir übernehmen Verantwortung nicht nur für unseren Arbeitsbereich, sondern auch für Vorgänge außerhalb unseres Bereiches. Wir halten die Augen auf und sprechen erkannte Defizite in anderen Bereichen an.
+</p>	
+	
+<p class="w3-myfont">
+Wir denken im Rahmen unserer Arbeit darüber nach, wie wir Arbeitsabläufe effizienter gestalten können.
+</p>	
+	
+<p class="w3-myfont">
+Wir nutzen im Rahmen unserer Arbeit konsequent unsere Technik, insbesondere unsere Kommunikationstechnik, um zu vermeiden, dass wir unnötige Wege machen bzw. andere in ihrer Arbeit stören.
+</p>		
+	
+<p class="w3-myfont">
+Wir achten darauf, dass durch die Art und Weise wie wir arbeiten, andere Mitarbeiter bei ihrer Arbeit nicht behindert oder gestört werden.
+</p>	
+	
+<p class="w3-myfont">
+Wir melden uns nicht bei jedem Unwohlsein krank, da wir wissen, dass unsere Arbeit dann durch andere erledigt werden muss.
+</p>	
+	
+<p class="w3-myfont">
+Wir planen unseren Urlaub rechtzeitig und unter Berücksichtigung der Belange unserer Gesellschaften und stimmen uns mit anderen Mitarbeitern hierbei ab.
+</p>	
+
+<p class="w3-myfont w3-large">
+<b>Chancen am Arbeitsplatz</b>
+</p>
+	
+<p class="w3-myfont">
+Jeder Mitarbeiter unserer Gesellschaft hat entsprechend seiner Ausbildung die gleichen Chancen, sich weiterzubilden.
+</p>	
+	
+<p class="w3-myfont">
+Jeder Mitarbeiter unserer Gesellschaft hat in seinem Bereich die Möglichkeit mehr Verantwortung zu übernehmen.
+</p>	
+	
+<p class="w3-myfont">
+Wir akzeptieren, dass jede Form der Beförderung (Beförderung i. e. S., Gehaltssteigerung, Fortbildung auf Kosten der Gesellschaft) nur bei entsprechender Leistung möglich ist und Beförderungen wegen der Dauer der Zugehörigkeit zu einer unserer Gesellschaften nicht möglich sind.
+</p>		
+	
+<p class="w3-myfont w3-large">
+<b>Schutz von Unternehmensvermögen</b>
+</p>	
+	
+<p class="w3-myfont">
+Die Vermögenswerte des Unternehmens sind für die Agenturtätigkeit bestimmt und müssen geschützt werden.
+</p>	
+	
+<p class="w3-myfont">
+Zum Firmenvermögen gehören auch alle Aufzeichnungen und sonstigen Unterlagen, wie Berichte, Notizen, Listen, usw. sowie Kopien derselben, die unsere Mitarbeiter in Bezug auf die Tätigkeiten unserer Gesellschaften anfertigen oder zusammentragen. Sämtliche dieser Unterlagen sind unverzüglich nach Beendigung des Arbeitsverhältnisses oder jederzeit nach Aufforderung zu übergeben.
+</p>	
+	
+<p class="w3-myfont">
+Zur Sicherung der Firmenvermögen verpflichten wir uns alle, darauf zu achten, dass sämtliche Kundenunterlagen, Unterlagen der Gesellschaft, Stempel, Listen, usw. dem Zugriff Dritter verwehrt bleiben. Hierzu gehört, dass alle o. g. Unterlagen über Nacht in verschlossenen  Schränken und Schreibtischen aufbewahrt werden. Jeder achtet darauf, dass alle Fenster und Türen nach Geschäftsschluss verschlossen sind. Jeder kontrolliert beim Verlassen der Büros in seinem Bereich die Einhaltung dieser Erfordernisse.
+</p>		
+	
+<p class="w3-myfont">
+Firmeneigentum darf niemals zur persönlichen Bereicherung verwendet werden.
+</p>	
+	
+<p class="w3-myfont">
+Firmeneigentum darf nie für die Begehung rechtswidriger Handlungen missbraucht werden.
+</p>		
+	
+<p class="w3-myfont w3-large">
+<b>Disziplinarmaßnahmen bei Kodex-Verstößen</b>
+</p>	
+
+<p class="w3-myfont">
+Wir akzeptieren, dass die Geschäftsführung das Recht hat, bei Kodex-Verstößen disziplinarische Maßnahmen zu ergreifen, deren Schwere sich nach dem Ausmaß des Verstoßes richtet.
+</p>	
+	
+<p class="w3-myfont">
+Einfache Verstöße werden mit einer Ermahnung sanktioniert.
+</p>	
+	
+<p class="w3-myfont">
+Wiederholte einfache oder gravierendere Verstöße werden mit einer Abmahnung, die in die Personalakte übernommen wird, sanktioniert.
+</p>	
+		
+<p class="w3-myfont">
+Wiederholte gravierendere oder schwere Verstöße werden mit einer außerordentlichen Kündigung sanktioniert.
+</p>		
+	
+<p class="w3-myfont">
+Als schwere Verstöße gegen diesen Kodex gelten insbesondere:
+</p>		
+	
+		<ul class="w3-myfont">
+			<li>grobe Illoyalität gegenüber den Gesellschaften, der Geschäftsführung oder anderen Mitarbeitern</li>
+			<li>Verletzung der Verschwiegenheitspflicht</li>
+			<li>wiederholte Verstöße gegen die Regelungen der Stundenbuchung</li>
+			<li>jegliche Veruntreuung und Schädigung von Firmenvermögen</li>
+		</ul>	
+	
+<p class="w3-myfont w3-large">
+<b>Rechtlicher Hinweis</b>
+</p>	
+	
+<p class="w3-myfont">
+Dieser Kodex dient als Referenz für alle Mitarbeiter und Geschäftspartner der Brand Factory.
+</p>	
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+<div class="w3-container w3-hide-small">
+	
+	<div class="w3-third w3-left-align"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+		<div class="w3-third">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+	</div>
+	
+	<div class="w3-third w3-right w3-right-align w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>
+	
+<div class="w3-container w3-hide-large w3-hide-medium">
+<div class="w3-container">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+</div>
+
+<div class="w3-container">	
+	<div class="w3-half w3-tiny"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+	<div class="w3-half w3-tiny w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>	
+</div>		
+
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);    
+}
+</script>
+
+
+</body>
+</html>
