@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<title>BRAND FACTORY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kadwa|Titillium+Web" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kadwa", sans-serif;}
+.w3-myfont {font-family: "Titillium Web", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./Bilder/Head_BG.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./Bilder/service.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./Bilder/agency.jpg");
+  min-height: 400px;
+}
+
+/* Fourth image (Projekt) */
+.bgimg-4 {
+  background-image: url("./Bilder/Leistung_03.jpg");
+  min-height: 400px;
+}	
+
+/* Fifth image (Projekt) */
+.bgimg-5 {
+  background-image: url("./Bilder/Icons/BFMAPpositiv.svg");
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}	
+
+/* Sixth image (Projekt) */
+.bgimg-6 {
+  background-image: url("./Bilder/Nuii.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+
+/* Seventh image (Projekt) */
+.bgimg-7 {
+  background-image: url("./Bilder/Durchstarter.jpg");
+  max-height: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}	
+	
+/* Aighth image (BF-Map) */
+.bgimg-8 {
+  background-image: url("./Bilder/Icons/MDCLogo1.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-9 {
+  background-image: url("./Bilder/Icons/logo_starbuck.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Aighth image (BF-Map) */
+.bgimg-10 {
+  background-image: url("./Bilder/Icons/Kahn.png");
+  max-height: 100px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}	
+	
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.mySlides {display:none}	
+.w3-theme {color:#fff !important;background-color:#333333 !important}
+	
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}	
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-battery-full"></i> LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-door-open"></i> JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-comments"></i> BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <img src="./Bilder/logoInvert.png" class="w3-small" alt="BRAND FACTORY" style="width:100%;max-width:160px">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+	<a href="BF-Projekte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJEKTE</a>
+    <a href="BF-Leistungen.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEISTUNGEN</a>
+	<a href="BF-Jobs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">JOBS</a>
+	<a href="BF-Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+	<a href="BF-Kontakte.html" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+  </div>
+</div>
+
+
+<!-- Erste Zeile: Headline & Einleitung -->
+<div class="w3-row w3-black w3-padding-64 w3-container" id="about">
+	<h1 class="w3-center w3-black w3-xxxlarge">Datenschutzerklärung</h1>
+</div>
+	
+<div class="w3-content w3-container w3-padding-64">
+	
+<p class="w3-myfont">
+Der Schutz Ihrer personenbezogenen Daten bei der Erhebung, Verarbeitung und Nutzung anlässlich Ihres Besuchs auf unserer Homepage ist uns ein sehr ernstes Anliegen. Alle Angaben zu Ihrer Person, wie Name, Adresse, Telefonnummer, E-Mail-Adresse, usw. sowie alle Informationen, welche auf Sie zurückgeführt werden können, werden als personenbezogene Daten bezeichnet. Wir möchten, dass Sie wissen, wann wir welche Daten erheben und wie wir sie verwenden. Wir haben technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften über den Datenschutz sowohl von uns als auch von möglichen externen Dienstleistern beachtet werden. Ihre Daten werden im Rahmen der gesetzlichen Vorschriften geschützt. Automatisiert werden personenbezogene Daten auf dieser Webseite nur im technisch notwendigen Umfang erhoben.
+</p>
+<p class="w3-myfont">
+Bei Fragen oder Anliegen bezüglich des Datenschutzes wenden Sie sich bitte per E-Mail an
+</p>
+<p class="w3-myfont">
+datenschutzbeauftragter@datenschutzexperte.de
+<br>
+www.datenschutzexperte.de
+</p>
+<p class="w3-myfont">
+Nachfolgend finden Sie Informationen, welche Daten während Ihres Besuchs auf der Homepage erfasst und wie diese genutzt werden.	
+</p>
+
+<p class="w3-myfont w3-xlarge">
+<b>Erhebung und Verarbeitung von Daten</b>
+</p>
+<p class="w3-myfont w3-large">
+<b>Webseiten-Zugriff</b>
+</p>
+<p class="w3-myfont">
+Jeder Zugriff auf unsere Homepage und jeder Abruf einer auf der Homepage hinterlegten Datei wird protokolliert. Die Speicherung dient internen systembezogenen Zwecken. Protokolliert werden:
+</p>
+
+<ul class="w3-myfont">
+<li>Webseite, von der aus Sie unsere Seite aufrufen</li>
+<li>Hostname des zugreifenden Rechners (IP Adresse)</li>
+<li>Name und URL der abgerufenen Datei und ob der Abruf
+erfolgreich war sowie übertragene Datenmenge, Zugriffsdatum und Zugriffszeit</li>
+</ul>
+<p class="w3-myfont">
+Eine Zuordnung dieser Daten zu einer bestimmten Person ist uns nicht möglich. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Diese Daten werden zu statistischen Zwecken, um die Qualität dieser Webseite und der Services dieser Webseite zu verbessern ausgewertet und im Anschluss gelöscht.
+</p>
+
+<p class="w3-myfont w3-large">
+<b>Nutzung und Weitergabe personenbezogener Daten</b>
+</p>
+<p class="w3-myfont">
+Soweit Sie uns personenbezogene Daten zur Verfügung gestellt haben, verwenden wir diese nur zur Beantwortung Ihrer Anfragen, für die technische Administration und soweit Sie eingewilligt haben für unser Marketing. Ihre personenbezogenen Daten werden an Dritte nur weitergegeben oder sonst übermittelt, wenn dies zum Zwecke der Vertragsabwicklung erforderlich ist, dies zu Abrechnungszwecken erforderlich ist, wir gesetzlich dazu verpflichtet sind oder Sie zuvor eingewilligt haben.
+<br>
+Sie haben das Recht, eine erteilte Einwilligung mit Wirkung für die Zukunft jederzeit zu widerrufen.
+Die Löschung der gespeicherten personenbezogenen Daten erfolgt, wenn Sie Ihre Einwilligung zur Speicherung widerrufen, wenn ihre Kenntnis zur Erfüllung des mit der Speicherung verfolgten Zwecks nicht mehr erforderlich ist, sprich der Vorgang abgewickelt ist und dem keine gesetzlichen Löschfristen entgegenstehen, oder wenn ihre Speicherung aus sonstigen gesetzlichen Gründen unzulässig ist. Sollten die Daten nicht gelöscht werden können, werden Sie bis zum Ablauf gesetzlicher Löschfristen für eine weitere Verarbeitung gesperrt.
+</p>
+
+<p class="w3-myfont w3-large">
+<b>Cookies</b>
+</p>
+<p class="w3-myfont">
+Die Internetseiten verwenden an mehreren Stellen so genannte Cookies. Sie dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren.
+Sie können Ihren Browser so einstellen, dass er sie benachrichtigt, wenn er einen Cookie erhält oder dass die Speicherung von "Cookies" unterdrückt wird. In Einzelfällen kann dies aber dazu führen, dass Sie gegebenenfalls nicht sämtliche Funktionen unserer Webseite vollumfänglich nutzen können.
+</p>	
+	
+<p class="w3-myfont w3-xlarge">
+<b>Web-Analyse</b>
+</p>
+<p class="w3-myfont w3-large">
+<b>Google Analytics</b>
+</p>
+<p class="w3-myfont">
+Diese Website benutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA. Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Website, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plug-In herunterladen und installieren.<br>
+Der aktuelle Link ist https://tools.google.com/dlpage/gaoptout?hl=de
+<p class="w3-myfont">
+Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter https://www.google.com/intl/de/policies/technologies/cookies/ .
+</p>
+<p class="w3-myfont">
+Wir weisen Sie darauf hin, dass auf dieser Website Google Analytics um den Code „gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
+Wir nutzen Google Analytics zudem dazu, Daten aus dem Double-Click-Cookie zu statistischen Zwecken auszuwerten. Sollten Sie dies nicht wünschen, können Sie dies über den Anzeigenvorgaben-Manager (https://www.google.de/settings/ads ) deaktivieren.
+	</p>
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Links zu anderen Webseiten</b>
+</p>
+<p class="w3-myfont">
+Das Landgericht Hamburg hat am 12. Mai 1998 –Aktenzeichen: 312 O 85/98 –entschieden, dass sich ein Unternehmen / eine Person durch einen Link auf eine Internet-Seite Dritter, den Inhalt dieser Seite zu eigen macht, es sei denn, das Unternehmen / die Person distanziert sich deutlich von diesen verlinkten Inhalten. Aus diesem Grunde distanziert sich die Brand Factory hiermit ausdrücklich von den Inhalten aller gelinkten Websites. Die Brand Factory hat keinerlei Einfluss auf die Inhalte der gelinkten Seiten und übernimmt somit keinerlei Haftung für deren Aktualität, Richtigkeit, Vollständigkeit, Qualität und zukünftige Gestaltung. Für die Inhalte der verlinkten Websites ist ausschließlich deren Betreiber verantwortlich.
+Bitte beachten Sie auch die jeweiligen Datenschutzerklärungen der Dritten, auf deren Seite der Link erfolgt. Die Ihnen vorliegende Datenschutzerklärung gilt ausschließlich für den Internet-Auftritt der Brand Factory Group unter www.brand-factory.de.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Recht auf informationelle Selbstbestimmung</b>
+</p>
+<p class="w3-myfont">
+Sie haben das Recht, zu erfahren, welche Ihrer Daten bei uns gespeichert sind (Auskunftsrecht), und nicht korrekte Daten korrigieren bzw. löschen/sperren zu lassen. Auf schriftliche Anfrage werden wir Sie gern über die zu Ihrer Person gespeicherten Daten informieren. Sie erhalten von uns hierzu in geeigneter Form die entsprechenden Unterlagen. Bitte verstehen Sie, dass wir zuvor natürlich auch Sie als Empfänger verifizieren müssen – zum Schutz Ihrer personenbezogenen Daten.
+</p>	
+	
+<p class="w3-myfont w3-large">
+<b>Sicherheitshinweis</b>
+</p>
+<p class="w3-myfont">
+Wir sind bemüht, Ihre personenbezogenen Daten durch Ergreifung aller technischen und organisatorischen Möglichkeiten so zu speichern, dass sie für Dritte nicht zugänglich sind. Bei der Kommunikation über eine unverschlüsselte E-Mail kann die vollständige Datensicherheit von uns nicht gewährleistet werden, so dass wir Ihnen bei vertraulichen Informationen den Postweg empfehlen.
+</p>	
+	
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+<div class="w3-container w3-hide-small">
+	
+	<div class="w3-third w3-left-align"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+		<div class="w3-third">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+	</div>
+	
+	<div class="w3-third w3-right w3-right-align w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>
+	
+<div class="w3-container w3-hide-large w3-hide-medium">
+<div class="w3-container">	
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Zum Anfang</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+	<i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+<p> BRAND FACTORY</p>
+  <p>&copy;2019</p>
+</div>
+
+<div class="w3-container">	
+	<div class="w3-half w3-tiny"><h5>BRAND FACTORY</h5>
+  		<p class="w3-myfont">Westerbachstraße 47/Haus 2<br>60489 Frankfurt am Main<br>Tel.: +49 69 9074960</p>
+	</div>
+	
+	<div class="w3-half w3-tiny w3-myfont"><a href="BF-Datenschutz.html">Datenschutzerklärung</a><br><a href="BF-Verantwortung.html">Verantwortung</a><br><a href="BF-Impressum.html">Impressum</a><br><a href="BF-AGB.html">AGB</a>
+	</div>
+</div>	
+</div>		
+
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);    
+}
+</script>
+
+
+</body>
+</html>
