@@ -500,9 +500,9 @@ function carousel() {
 }
 	
 var myIndex = 0;
-carousel();
+slider();
 
-function carousel() {
+function slider() {
   var i;
   var x = document.getElementsByClassName("mySlides2");
   for (i = 0; i < x.length; i++) {
@@ -511,7 +511,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 6000);    
+  setTimeout(slider, 6000);    
 }
 </script>
 
