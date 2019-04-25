@@ -499,7 +499,7 @@ function carousel() {
   setTimeout(carousel, 6000);    
 }
 	
-var myIndex = 0;
+var Index = 0;
 slider();
 
 function slider() {
@@ -508,9 +508,9 @@ function slider() {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  Index++;
+  if (Index > x.length) {Index = 1}    
+  x[Index-1].style.display = "block";  
   setTimeout(slider, 6000);    
 }
 </script>
