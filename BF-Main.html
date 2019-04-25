@@ -91,7 +91,7 @@ body, html {
 	
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, {
     background-attachment: scroll;
     min-height: 400px;
   }
@@ -99,7 +99,7 @@ body, html {
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -126,7 +126,7 @@ body, html {
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-small" id="home">
   <div class="w3-display-bottomleft w3-padding" style="white-space:nowrap;">
     <span class="w3-center w3-padding w3-xxxlarge w3-white w3-animate-opacity">Willkommen</span>
@@ -137,7 +137,7 @@ body, html {
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- Parallax Image with Logo Text on small screens -->
 <div class="bgimg-1 w3-display-container w3-opacity-min w3-hide-large" id="home">
   <div class="w3-display-bottomleft w3-padding" style="white-space:nowrap;">
     <span class="w3-center w3-padding w3-large w3-white w3-animate-opacity">Willkommen</span>
@@ -148,7 +148,7 @@ body, html {
   </div>
 </div>	
 	
-<!-- Erste Zeile: Headline & Einleitung -->
+<!-- First Row: Headline & Subline (Entwicklung) -->
 <div class="w3-row w3-black w3-padding-64 w3-container" id="about">
 	<h1 class="w3-center w3-black w3-xxxlarge">Wir entwickeln Kampagnen, die verkaufen!</h1>
  	<p class="w3-content w3-myfont w3-xlarge">Ob bekannten Marken, Dienstleistungen oder öffentliche Auftragsgeber – wir sorgen stehts mit unseren Kampagnenideen für Nachfrage und Resonanz. Dabei folgen wir  seit 20 Jahren ein klares Ziel - wir steigern Ihre Relevanz im Markt.</p>
@@ -170,7 +170,7 @@ body, html {
 	
 </div>
 	
-<!-- Zweite Zeile: Headline & Einleitung -->
+<!-- Second Row: Headline & Subline (Projekte) -->
 <div class="w3-row w3-black w3-padding-64 w3-container" id="projekte">
 	<h1 class="w3-center w3-black w3-xxxlarge">Aktuelle Projekte</h1>
  	<p class="w3-content w3-myfont w3-xlarge">Seit über 20 Jahren haben wir für über 100 Konzerne und führende Markenartikler Kampagnen und Ideen entwickelt um für Wachstum und mehr Aufmerksamkeit zu sorgen.
@@ -206,7 +206,8 @@ body, html {
 
 <div class="w3-row w3-light-gray" style="padding:32px 0px 0px 0px">
 </div>		
-	
+
+<!-- Third Row: Headline & Subline (Kundenstimmen) -->	
 <div class="w3-row w3-light-gray">
 
 	<div class="w3-content w3-hide-small">
@@ -217,6 +218,7 @@ body, html {
 		<h1 class="w3-center w3-text-black w3-xxxlarge">Kunden-<br>stimmen</h1>
 	</div>
 	
+<!-- Third Grid: Kundenstimmen -->		
 	<div class="mySlides1 w3-center w3-container w3-hide-small" style="width:100%">
 		<p class="w3-xxlarge w3-serif w3-text-dark-gray w3-animate-zoom">
 			<i>„Bei der BF hat man stets das Gefühl, dass man gut aufgehoben ist. <br>Mit viel Fleiß und persönlichem Engagement lösen sie die Problem-<br>stellungen.“</i>
@@ -236,19 +238,20 @@ body, html {
 		</p>
 	</div>
 
-<div class="mySlides1 w3-center w3-container w3-hide-large w3-hide-medium" style="width:80%">
+<!-- Third Grid: Kundenstimmen on small screens -->
+<div class="mySlides2 w3-center w3-container w3-hide-large w3-hide-medium" style="width:80%">
 		<p class="w3-xxlarge w3-serif w3-text-dark-gray w3-animate-zoom">
 			<i>„Bei der BF hat man stets das Gefühl, dass man gut aufgehoben ist. <br>Mit viel Fleiß und persönlichem Engagement lösen sie die Problem-<br>stellungen.“</i>
 		<h6 class="w3-myfont w3-xlarge">Marius Baumeister / Sales Director Purina</h6>
 		</p>
 	</div>
-	<div class="mySlides1 w3-center w3-container w3-hide-large w3-hide-medium" style="width:80%">
+	<div class="mySlides2 w3-center w3-container w3-hide-large w3-hide-medium" style="width:80%">
 		<p class="w3-xxlarge w3-serif w3-text-dark-gray w3-animate-zoom">
 			<i>„Meine Lieblingsagentur mit der wir schon<br> so manche Nachtschicht ohne Meckern hinter uns gebracht haben.“</i>
 			<h6 class="w3-myfont w3-xlarge">Gerd Schwalber / CCSD Head LEH Nestlé Waters</h6>
 		</p>
 	</div>
-	<div class="mySlides1 w3-center w3-container w3-hide-large w3-hide-medium" style="width:80%">
+	<div class="mySlides2 w3-center w3-container w3-hide-large w3-hide-medium" style="width:80%">
 		<p class="w3-xxlarge w3-serif w3-text-dark-gray w3-animate-zoom">
 			<i>„Überzeugen uns immer wieder aufs Neue<br> mit tollen Konzepten und Strategien in einem heiß umkämpften Markt.“</i>
 			<h6 class="w3-myfont w3-xlarge">Sonja Sobottka / Vkf-Leiterin Dr. Oetker Weisse Linie</h6>
@@ -486,6 +489,18 @@ carousel();
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);    
+}
+	
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
